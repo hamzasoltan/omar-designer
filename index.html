@@ -1439,6 +1439,52 @@ body.light{
   }
 }
 </style>
+<style id="codek-hero-typography-v2">
+/* Arabic hero title — controlled RTL composition */
+.hero-text{
+  direction:rtl!important;
+}
+.hero h1{
+  direction:rtl!important;
+  unicode-bidi:plaintext!important;
+  width:100%!important;
+  max-width:560px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  text-align:right!important;
+  gap:0!important;
+  font-size:clamp(3.8rem,5.4vw,5.6rem)!important;
+  line-height:.94!important;
+  letter-spacing:-.045em!important;
+  margin:0 0 26px!important;
+  overflow:visible!important;
+}
+.hero h1 span,
+.hero h1 em{
+  width:auto!important;
+  max-width:100%!important;
+  display:block!important;
+  white-space:nowrap!important;
+  direction:rtl!important;
+  unicode-bidi:isolate!important;
+}
+.hero h1 em{
+  font-size:1em!important;
+}
+.hero-title-last{
+  margin-top:2px!important;
+}
+@media(max-width:767px){
+  .hero h1{
+    max-width:100%!important;
+    align-items:center!important;
+    text-align:center!important;
+    font-size:clamp(3rem,13vw,4.3rem)!important;
+    letter-spacing:-.035em!important;
+  }
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>

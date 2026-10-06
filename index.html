@@ -875,6 +875,103 @@ body.light{
 .srv-title{font-size:1.1rem!important;position:relative;z-index:1}
 .srv-desc{font-size:.85rem!important;line-height:1.75!important;position:relative;z-index:1}
 </style>
+<style id="codek-works-regular-grid">/* Works — regular numbered glass grid */
+.works-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  grid-template-rows:repeat(2,minmax(0,1fr))!important;
+  gap:1.25rem!important;
+  max-width:76rem!important;
+  margin:0 auto 5rem!important;
+  padding:2.5rem .25rem 1rem!important;
+  align-items:stretch!important;
+}
+.cat-btn,
+.cat-btn:nth-child(n){
+  grid-column:auto!important;
+  grid-row:auto!important;
+  min-height:160px!important;
+  height:160px!important;
+  padding:3.2rem 1.5rem 1.25rem!important;
+  border-radius:1.35rem!important;
+  justify-content:flex-end!important;
+  align-items:flex-start!important;
+  text-align:right!important;
+  overflow:visible!important;
+  position:relative!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025))!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+}
+.cat-btn .cat-index{
+  position:absolute!important;
+  top:-1.05rem!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+  width:4.15rem!important;
+  height:4.15rem!important;
+  border-radius:50%!important;
+  display:grid!important;
+  place-items:center!important;
+  z-index:5!important;
+  color:#fff!important;
+  font-size:1.05rem!important;
+  font-weight:800!important;
+  background:radial-gradient(circle at 38% 30%,rgba(255,255,255,.22),rgba(236,72,153,.52) 45%,rgba(67,12,52,.92) 100%)!important;
+  border:1px solid rgba(255,255,255,.42)!important;
+  box-shadow:0 8px 28px rgba(236,72,153,.28),inset 0 0 18px rgba(255,255,255,.08)!important;
+}
+.cat-btn .cat-index:after{
+  content:""!important;
+  position:absolute!important;
+  inset:-7px!important;
+  border-radius:50%!important;
+  border:1px solid rgba(236,72,153,.24)!important;
+}
+.cat-btn .cat-icon{
+  position:absolute!important;
+  top:1.35rem!important;
+  right:1.35rem!important;
+  width:3rem!important;
+  height:3rem!important;
+  border-radius:.85rem!important;
+  display:grid!important;
+  place-items:center!important;
+  background:rgba(255,61,154,.10)!important;
+  border:1px solid rgba(255,61,154,.18)!important;
+}
+.cat-btn .cat-label{
+  position:relative!important;
+  z-index:2!important;
+  font-size:1.08rem!important;
+  font-weight:700!important;
+}
+.cat-btn:after{
+  content:"↗"!important;
+  position:absolute!important;
+  left:1.25rem!important;
+  top:1.15rem!important;
+  color:rgba(255,255,255,.25)!important;
+  font-size:1.15rem!important;
+  opacity:1!important;
+  transform:none!important;
+}
+.cat-btn:hover{
+  transform:translateY(-6px)!important;
+  border-color:rgba(255,61,154,.38)!important;
+  background:linear-gradient(145deg,rgba(255,61,154,.10),rgba(255,255,255,.025))!important;
+  box-shadow:0 20px 45px rgba(0,0,0,.25),0 0 26px rgba(255,61,154,.08)!important;
+}
+.cat-btn:hover .cat-index{
+  transform:translateX(-50%) translateY(-3px) scale(1.06)!important;
+}
+@media(max-width:900px){
+  .works-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important}
+}
+@media(max-width:620px){
+  .works-grid{grid-template-columns:1fr!important;gap:1.25rem!important;padding-top:2rem!important}
+  .cat-btn,.cat-btn:nth-child(n){height:145px!important;min-height:145px!important}
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>

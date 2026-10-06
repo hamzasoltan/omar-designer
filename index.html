@@ -1280,10 +1280,12 @@ body.light{
   top:2px!important;
 }
 </style>
-<style id="codek-services-number-order">
-/* Service numbers: 01 → 02 → 03 from right to left */
-.services-grid{
-  direction:rtl!important;
+<style id="codek-services-spacing-only">
+/* Spacing-only correction for the shown service cards */
+.srv-card:nth-child(1)>div:last-child,
+.srv-card:nth-child(2)>div:last-child,
+.srv-card:nth-child(4)>div:last-child{
+  bottom:10px!important;
 }
 </style>
 </head>

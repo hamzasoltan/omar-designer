@@ -972,6 +972,84 @@ body.light{
   .cat-btn,.cat-btn:nth-child(n){height:145px!important;min-height:145px!important}
 }
 </style>
+<style id="codek-services-numbered-grid">/* Services — regular numbered glass grid */
+.services-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:1.25rem!important;
+  max-width:76rem!important;
+  margin:0 auto!important;
+}
+.srv-card,.srv-card:nth-child(n){
+  grid-column:auto!important;
+  min-height:160px!important;
+  height:160px!important;
+  padding:3.2rem 1.5rem 1.25rem!important;
+  border-radius:1.35rem!important;
+  position:relative!important;
+  overflow:visible!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025))!important;
+  border:1px solid rgba(255,255,255,.16)!important;
+  align-items:flex-start!important;
+  justify-content:flex-end!important;
+  text-align:right!important;
+}
+.srv-card:nth-child(1)::before,
+.srv-card:nth-child(2)::before,
+.srv-card:nth-child(3)::before,
+.srv-card:nth-child(4)::before,
+.srv-card:nth-child(5)::before,
+.srv-card:nth-child(6)::before{
+  content:counter(service-card,decimal-leading-zero);
+}
+.services-grid{counter-reset:service-card}
+.srv-card{counter-increment:service-card}
+.srv-card::before{
+  position:absolute!important;
+  top:-1.05rem!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+  width:4.15rem!important;
+  height:4.15rem!important;
+  border-radius:50%!important;
+  display:grid!important;
+  place-items:center!important;
+  z-index:5!important;
+  color:#fff!important;
+  font-size:1.05rem!important;
+  font-weight:800!important;
+  background:radial-gradient(circle at 38% 30%,rgba(255,255,255,.22),rgba(236,72,153,.52) 45%,rgba(67,12,52,.92) 100%)!important;
+  border:1px solid rgba(255,255,255,.42)!important;
+  box-shadow:0 8px 28px rgba(236,72,153,.28),inset 0 0 18px rgba(255,255,255,.08)!important;
+}
+.srv-card::after{
+  content:"↗"!important;
+  position:absolute!important;
+  left:1.25rem!important;
+  top:1.15rem!important;
+  color:rgba(255,255,255,.25)!important;
+  font-size:1.15rem!important;
+  opacity:1!important;
+}
+.srv-icon{
+  position:absolute!important;
+  top:1.35rem!important;
+  right:1.35rem!important;
+  width:3rem!important;
+  height:3rem!important;
+  border-radius:.85rem!important;
+  background:rgba(255,61,154,.10)!important;
+  border:1px solid rgba(255,61,154,.18)!important;
+}
+.srv-title{position:relative!important;z-index:2!important;font-size:1.08rem!important}
+.srv-desc{position:relative!important;z-index:2!important;font-size:.84rem!important;line-height:1.7!important}
+.srv-card:hover{transform:translateY(-6px)!important}
+@media(max-width:900px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:620px){
+  .services-grid{grid-template-columns:1fr!important;gap:1.25rem!important;padding-top:2rem!important}
+  .srv-card,.srv-card:nth-child(n){height:145px!important;min-height:145px!important}
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>

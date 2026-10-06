@@ -1318,6 +1318,38 @@ body.light{
   top:68px!important;
 }
 </style>
+<style id="codek-navbar-rtl-final">
+@media(min-width:901px){
+  .header-inner{
+    direction:rtl!important;
+    display:flex!important;
+    flex-direction:row!important;
+    justify-content:space-between!important;
+    gap:2rem!important;
+  }
+  .logo-center{
+    position:static!important;
+    order:1!important;
+    transform:none!important;
+    margin:0!important;
+    flex:0 0 auto!important;
+  }
+  .logo-center:hover{transform:scale(1.04)!important}
+  .desktop-nav{
+    order:2!important;
+    direction:rtl!important;
+    margin:0 auto!important;
+    flex:0 1 auto!important;
+  }
+  .nav-cta{
+    order:3!important;
+    margin:0!important;
+  }
+  .menu-btn{
+    order:4!important;
+  }
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>
@@ -1328,31 +1360,30 @@ body.light{
 
 <!-- Header -->
 <header>
-  <div class="header-inner">
+  <div class="header-inner" dir="rtl">
     <button class="menu-btn" id="menuBtn" onclick="openMenu()" aria-label="القائمة">
       <i class="bi bi-list" style="font-size:1.25rem"></i>
     </button>
 
+    <div class="logo-center" onclick="scrollToSection('home-section')" role="button" tabindex="0" aria-label="الرئيسية">
+      <img src="./المصمم عمر_files/logo.jpg" alt="logo">
+    </div>
+
     <nav class="desktop-nav" aria-label="التنقل الرئيسي">
       <a href="#home-section" class="nav-link active" onclick="scrollToSection('home-section');return false">الرئيسية</a>
       <a href="#services-section" class="nav-link" onclick="scrollToSection('services-section');return false">خدماتي</a>
+      <a href="#stats-section" class="nav-link" onclick="scrollToSection('stats-section');return false">خبرتي</a>
       <a href="#work-section" class="nav-link" onclick="scrollToSection('work-section');return false">أعمالي</a>
       <a href="#testimonials-section" class="nav-link" onclick="scrollToSection('testimonials-section');return false">آراء العملاء</a>
       <a href="#links-section" class="nav-link" onclick="scrollToSection('links-section');return false">تواصل معي</a>
     </nav>
 
+    <button class="nav-cta" onclick="scrollToSection('links-section')">
+      <span>ابدأ مشروعك</span><i class="bi bi-box-arrow-up-left"></i>
+    </button>
+
     <button class="back-btn" id="backBtn" onclick="goBack()" style="display:none">
       <i class="bi bi-arrow-right" style="font-size:1.3rem"></i>
-    </button>
-    <div class="logo-center" onclick="showPage('home')">
-              <img src="./المصمم عمر_files/logo.jpg" alt="logo">
-          </div>
-    <button class="nav-cta" onclick="scrollToSection('links-section')">
-      <span>ابدأ مشروعك</span><i class="bi bi-box-arrow-up-right"></i>
-    </button>
-    <button class="theme-btn" onclick="toggleTheme()" aria-label="تبديل الوضع">
-      <i id="sunIcon" class="bi bi-sun" style="font-size: 1.1rem;"></i>
-      <i id="moonIcon" class="bi bi-moon" style="font-size: 1.1rem; display: none;"></i>
     </button>
   </div>
 </header>
@@ -1362,13 +1393,13 @@ body.light{
   <button class="close-btn" onclick="closeMenu()">
     <i class="bi bi-x-lg" style="font-size:1.9rem"></i>
   </button>
-  <nav>
-    <a href="https://omardes.rf.gd/#home-section" onclick="scrollToSection('home-section');closeMenu()">الرئيسية</a>
-    <a href="https://omardes.rf.gd/#services-section" onclick="scrollToSection('services-section');closeMenu()">الخدمات</a>
-    <a href="https://omardes.rf.gd/#stats-section" onclick="scrollToSection('stats-section');closeMenu()">الاحصائيات</a>
-    <a href="https://omardes.rf.gd/#work-section" onclick="scrollToSection('work-section');closeMenu()">المعرض</a>
-    <a href="https://omardes.rf.gd/#testimonials-section" onclick="scrollToSection('testimonials-section');closeMenu()">آراء العملاء</a>
-    <a href="https://omardes.rf.gd/#links-section" onclick="scrollToSection('links-section');closeMenu()">الروابط</a>
+  <nav dir="rtl">
+    <a href="#home-section" onclick="scrollToSection('home-section');closeMenu()">الرئيسية</a>
+    <a href="#services-section" onclick="scrollToSection('services-section');closeMenu()">خدماتي</a>
+    <a href="#stats-section" onclick="scrollToSection('stats-section');closeMenu()">خبرتي</a>
+    <a href="#work-section" onclick="scrollToSection('work-section');closeMenu()">أعمالي</a>
+    <a href="#testimonials-section" onclick="scrollToSection('testimonials-section');closeMenu()">آراء العملاء</a>
+    <a href="#links-section" onclick="scrollToSection('links-section');closeMenu()">تواصل معي</a>
   </nav>
 </div>
 
@@ -1748,15 +1779,7 @@ const allProjects = [{"id":45,"title":"حملة تسويقية لشركة الم
 const allCategories = ["حملات تسويقية","سوشيال ميديا","هويات بصرية","شعارات","كاروسيل","تهنئات"];
 let currentPage = 'home';
 let currentCategory = allCategories[0] || '';
-let isDark = true;
-
 // ─── THEME ───
-function toggleTheme() {
-  isDark = !isDark;
-  document.getElementById('body').classList.toggle('light', !isDark);
-  document.getElementById('sunIcon').style.display = isDark ? '' : 'none';
-  document.getElementById('moonIcon').style.display = isDark ? 'none' : '';
-}
 
 // ─── PAGES ───
 function showPage(name) {

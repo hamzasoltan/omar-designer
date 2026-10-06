@@ -1041,20 +1041,20 @@ body.light{
 
       <div class="metrics-panel">
         <div class="metric-card metric-primary reveal stagger-1 visible">
-          <span class="metric-watermark" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
-          <span class="metric-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+          <span class="metric-watermark" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
+          <span class="metric-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
           <div class="metric-copy"><strong>+9</strong><span>سنوات خبرة</span></div>
           <em>01</em>
         </div>
         <div class="metric-card reveal stagger-2 visible">
-          <span class="metric-watermark" aria-hidden="true"><i class="fa-regular fa-folder-open"></i></span>
-          <span class="metric-icon" aria-hidden="true"><i class="fa-regular fa-folder-open"></i></span>
+          <span class="metric-watermark" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></span>
+          <span class="metric-icon" aria-hidden="true"><i class="fa-solid fa-folder-open"></i></span>
           <div class="metric-copy"><strong>+500</strong><span>مشروع مكتمل</span></div>
           <em>02</em>
         </div>
         <div class="metric-card reveal stagger-3 visible">
-          <span class="metric-watermark" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
-          <span class="metric-icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+          <span class="metric-watermark" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
+          <span class="metric-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></span>
           <div class="metric-copy"><strong>98%</strong><span>تسليم بالموعد</span></div>
           <em>03</em>
         </div>
@@ -1349,7 +1349,7 @@ function renderProjects(cat) {
   document.getElementById('projects-count').textContent = filtered.length + ' مشاريع';
   if (filtered.length === 0) {
     list.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
-      <i class="fa-regular fa-folder-open" style="font-size:4.5rem"></i>
+      <i class="fa-solid fa-folder-open" style="font-size:4.5rem"></i>
       <p>لا يوجد مشاريع بعد</p>
     </div>`;
     return;
@@ -1589,11 +1589,11 @@ body.light .site-footer{background:#111;border-top:1px solid rgba(255,255,255,0.
 .metric-card:nth-child(4){background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(236,72,153,.03))}
 .metric-card:hover{transform:translateY(-4px) scale(1.012);border-color:rgba(236,72,153,.55);box-shadow:0 18px 42px rgba(0,0,0,.28),0 0 28px rgba(236,72,153,.08)}
 .metric-icon{position:absolute;top:1.1rem;right:1.1rem;width:2.7rem;height:2.7rem;border:1px solid var(--border);border-radius:.9rem;display:flex;align-items:center;justify-content:center;color:var(--pink);background:rgba(0,0,0,.12);transition:transform .35s cubic-bezier(.34,1.56,.64,1),background .35s}
-.metric-watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:clamp(5.5rem,9vw,8.5rem);line-height:1;color:var(--pink);opacity:.055;z-index:1;pointer-events:none;filter:drop-shadow(0 0 18px rgba(236,72,153,.08));transition:opacity .35s ease,transform .45s cubic-bezier(.16,1,.3,1)}
+.metric-watermark{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:clamp(5.5rem,9vw,8.5rem);line-height:1;color:var(--pink);opacity:.14;z-index:1;pointer-events:none;filter:drop-shadow(0 0 22px rgba(236,72,153,.14));transition:opacity .35s ease,transform .45s cubic-bezier(.16,1,.3,1)}
 .metric-card:nth-child(2) .metric-watermark{color:#cbd5e1}
 .metric-card:nth-child(3) .metric-watermark{color:#fbbf24}
 .metric-card:nth-child(4) .metric-watermark{color:#f9a8d4}
-.metric-card:hover .metric-watermark{opacity:.1;transform:translate(-50%,-50%) scale(1.06)}
+.metric-card:hover .metric-watermark{opacity:.2;transform:translate(-50%,-50%) scale(1.06)}
 .metric-card:hover .metric-icon{transform:rotate(-8deg) scale(1.08);background:rgba(236,72,153,.08)}
 .metric-copy{position:absolute;left:1.15rem;right:1.15rem;top:50%;transform:translateY(-42%);display:flex;flex-direction:column;align-items:center;text-align:center;gap:.18rem;z-index:2}
 .metric-copy strong{font-size:clamp(2.25rem,4vw,3.1rem);line-height:.95;font-weight:900;letter-spacing:-.045em;color:var(--fg);text-shadow:0 8px 22px rgba(0,0,0,.28)}

@@ -1295,6 +1295,29 @@ body.light{
   grid-auto-flow:row!important;
 }
 </style>
+<style id="codek-services-final-order-gap">
+/* Explicit desktop placement: 01, 02, 03 from right to left */
+@media(min-width:901px){
+  .services-grid{
+    direction:ltr!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  .srv-card:nth-child(1){grid-column:3!important;grid-row:1!important}
+  .srv-card:nth-child(2){grid-column:2!important;grid-row:1!important}
+  .srv-card:nth-child(3){grid-column:1!important;grid-row:1!important}
+  .srv-card:nth-child(4){grid-column:3!important;grid-row:2!important}
+  .srv-card:nth-child(5){grid-column:2!important;grid-row:2!important}
+  .srv-card:nth-child(6){grid-column:1!important;grid-row:2!important}
+}
+/* Icon bottom = 66px, title starts at 68px → 2px minimum gap */
+.srv-card .srv-icon{
+  top:20px!important;
+  right:20px!important;
+}
+.srv-card .srv-title{
+  top:68px!important;
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>

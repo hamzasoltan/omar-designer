@@ -1606,6 +1606,241 @@ body.light{
   line-height:inherit!important;
 }
 </style>
+
+
+<style id="codek-contact-premium">
+/* ---------- Premium Contact Section ---------- */
+#links-section{
+  position:relative;
+  overflow:hidden;
+}
+#links-section::before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  left:-260px;
+  bottom:-300px;
+  background:radial-gradient(circle,rgba(255,61,154,.11),transparent 68%);
+  pointer-events:none;
+}
+.contact-premium{
+  position:relative;
+  display:grid;
+  grid-template-columns:1.15fr 1px .85fr;
+  gap:34px;
+  align-items:stretch;
+  padding:30px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:28px;
+  background:
+    radial-gradient(circle at 12% 0%,rgba(255,61,154,.08),transparent 30%),
+    linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));
+  box-shadow:0 24px 80px rgba(0,0,0,.22);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.contact-social-block,.contact-direct-block{
+  min-width:0;
+}
+.contact-block-head{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:5px;
+  margin-bottom:20px;
+}
+.contact-block-kicker{
+  color:var(--pink);
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.16em;
+  direction:ltr;
+}
+.contact-block-head h3{
+  margin:0!important;
+  color:var(--fg)!important;
+  font-size:1.55rem;
+  font-weight:800;
+  line-height:1.2;
+  text-align:right!important;
+}
+.contact-social-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.contact-social-card,
+.contact-direct-card{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  min-width:0;
+  text-decoration:none;
+  color:var(--fg);
+  border:1px solid rgba(255,255,255,.09);
+  background:rgba(255,255,255,.035);
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s,background .35s,box-shadow .35s;
+}
+.contact-social-card{
+  flex-direction:column;
+  align-items:flex-start;
+  padding:18px;
+  border-radius:18px;
+}
+.contact-social-card:hover,
+.contact-direct-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(255,61,154,.42);
+  background:rgba(255,61,154,.065);
+  box-shadow:0 16px 36px rgba(0,0,0,.2);
+}
+.contact-social-icon,
+.contact-direct-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+  border-radius:14px;
+}
+.contact-social-icon{
+  width:44px;
+  height:44px;
+  font-size:1.25rem;
+}
+.contact-social-icon.telegram,
+.contact-direct-icon.telegram{
+  color:#229ed9;
+  background:rgba(34,158,217,.11);
+}
+.contact-social-icon.instagram{
+  color:#e1306c;
+  background:rgba(225,48,108,.11);
+}
+.contact-social-icon.behance{
+  color:#1769ff;
+  background:rgba(23,105,255,.11);
+}
+.contact-social-copy{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  min-width:0;
+  text-align:right;
+  width:100%;
+}
+.contact-social-copy strong,
+.contact-direct-card strong{
+  font-size:.9rem;
+  font-weight:750;
+}
+.contact-social-copy small,
+.contact-direct-card small{
+  color:var(--muted);
+  font-size:.72rem;
+  line-height:1.4;
+}
+.contact-social-arrow{
+  position:absolute;
+  top:15px;
+  left:15px;
+  color:rgba(255,255,255,.38);
+  font-size:.9rem;
+  transition:transform .3s,color .3s;
+}
+.contact-social-card:hover .contact-social-arrow,
+.contact-direct-card:hover>i{
+  transform:translate(-3px,3px);
+  color:var(--pink);
+}
+.contact-divider{
+  width:1px;
+  background:linear-gradient(to bottom,transparent,rgba(255,255,255,.14),transparent);
+}
+.contact-direct-block{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.contact-direct-block>p{
+  margin:0 0 22px;
+  max-width:390px;
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.9;
+  text-align:right;
+}
+.contact-direct-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.contact-direct-card{
+  padding:14px;
+  border-radius:16px;
+}
+.contact-direct-card>span:nth-child(2){
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  min-width:0;
+  flex:1;
+  text-align:right;
+}
+.contact-direct-icon{
+  width:40px;
+  height:40px;
+  font-size:1.1rem;
+}
+.contact-direct-icon.email{
+  color:#ea4335;
+  background:rgba(234,67,53,.11);
+}
+.contact-direct-card>i{
+  color:rgba(255,255,255,.35);
+  font-size:.85rem;
+  transition:transform .3s,color .3s;
+}
+@media(max-width:900px){
+  .contact-premium{
+    grid-template-columns:1fr;
+    gap:25px;
+    padding:22px;
+  }
+  .contact-divider{
+    width:100%;
+    height:1px;
+    background:linear-gradient(to right,transparent,rgba(255,255,255,.14),transparent);
+  }
+}
+@media(max-width:620px){
+  .contact-premium{
+    padding:18px;
+    border-radius:22px;
+  }
+  .contact-social-grid{
+    grid-template-columns:1fr;
+  }
+  .contact-social-card{
+    min-height:74px;
+    flex-direction:row;
+    align-items:center;
+    padding:13px;
+  }
+  .contact-social-copy{
+    width:auto;
+    flex:1;
+  }
+  .contact-social-arrow{
+    position:static;
+  }
+  .contact-direct-actions{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>
@@ -1922,47 +2157,56 @@ body.light{
   
   <!-- Social / Contact -->
   <section id="links-section">
-    <div class="section-eyebrow">05 / Contact</div><h2 class="reveal visible">لديك فكرة؟<br><span>خلّينا نحولها لشيء يُرى.</span></h2>
-    <div class="social-section-wrap">
-            <div class="social-sub-section reveal stagger-1 visible">
-        <h3>تابعني على</h3>
-        <div class="social-grid">
-                    <a href="https://t.me/omardisiner" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
-            <div class="social-icon" style="background:#229ed922;color:#229ed9">
-              <i class="bi bi-telegram"></i>            </div>
-            <span class="social-label">قناة تليجرام</span>
+    <div class="section-eyebrow">05 / Contact</div>
+    <h2 class="reveal visible">لديك فكرة؟<br><span>خلّينا نحولها لشيء يُرى.</span></h2>
+
+    <div class="contact-premium reveal visible">
+      <div class="contact-social-block">
+        <div class="contact-block-head">
+          <span class="contact-block-kicker">SOCIAL</span>
+          <h3>تابعني على</h3>
+        </div>
+        <div class="contact-social-grid">
+          <a href="https://t.me/omardisiner" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+            <span class="contact-social-icon telegram"><i class="bi bi-telegram"></i></span>
+            <span class="contact-social-copy"><strong>قناة تليجرام</strong><small>تابع آخر الأعمال</small></span>
+            <i class="bi bi-arrow-up-left contact-social-arrow"></i>
           </a>
-                    <a href="https://www.instagram.com/omardisiner/?hl=ar" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
-            <div class="social-icon" style="background:#e1306c22;color:#e1306c">
-              <i class="bi bi-instagram"></i>            </div>
-            <span class="social-label">انستجرام</span>
+          <a href="https://www.instagram.com/omardisiner/?hl=ar" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+            <span class="contact-social-icon instagram"><i class="bi bi-instagram"></i></span>
+            <span class="contact-social-copy"><strong>انستجرام</strong><small>شاهد أحدث التصاميم</small></span>
+            <i class="bi bi-arrow-up-left contact-social-arrow"></i>
           </a>
-                    <a href="https://www.behance.net/9e32d920" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
-            <div class="social-icon" style="background:#1769ff22;color:#1769ff">
-              <i class="bi bi-behance"></i>            </div>
-            <span class="social-label">بيهانس</span>
+          <a href="https://www.behance.net/9e32d920" target="_blank" rel="noopener noreferrer" class="contact-social-card">
+            <span class="contact-social-icon behance"><i class="bi bi-behance"></i></span>
+            <span class="contact-social-copy"><strong>بيهانس</strong><small>استكشف معرض الأعمال</small></span>
+            <i class="bi bi-arrow-up-left contact-social-arrow"></i>
           </a>
-                  </div>
+        </div>
       </div>
-      
-            <div class="social-sub-section reveal stagger-2 visible">
-        <h3>تواصل معي</h3>
-        <div class="social-grid">
-                    <a href="https://t.me/Omaremj_bot" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
-            <div class="social-icon" style="background:#229ed922;color:#229ed9">
-              <i class="bi bi-telegram"></i>            </div>
-            <span class="social-label">تواصل تليجرام</span>
+
+      <div class="contact-divider"></div>
+
+      <div class="contact-direct-block">
+        <div class="contact-block-head">
+          <span class="contact-block-kicker">LET'S TALK</span>
+          <h3>تواصل معي</h3>
+        </div>
+        <p>عندك مشروع أو فكرة؟ ابعتلي التفاصيل ونبدأ نحولها لهوية بصرية تستحق الظهور.</p>
+        <div class="contact-direct-actions">
+          <a href="https://t.me/Omaremj_bot" target="_blank" rel="noopener noreferrer" class="contact-direct-card">
+            <span class="contact-direct-icon telegram"><i class="bi bi-telegram"></i></span>
+            <span><strong>تواصل تليجرام</strong><small>ابدأ محادثة</small></span>
+            <i class="bi bi-arrow-up-left"></i>
           </a>
-                    <a href="mailto:Omarsharony9@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
-            <div class="social-icon" style="background:#ea433522;color:#ea4335">
-              <i class="bi bi-link-45deg"></i>            </div>
-            <span class="social-label">تواصل جيميل</span>
+          <a href="mailto:Omarsharony9@gmail.com" target="_blank" rel="noopener noreferrer" class="contact-direct-card">
+            <span class="contact-direct-icon email"><i class="bi bi-envelope"></i></span>
+            <span><strong>تواصل جيميل</strong><small>أرسل رسالة</small></span>
+            <i class="bi bi-arrow-up-left"></i>
           </a>
-                  </div>
+        </div>
       </div>
-      
-      
-          </div>
+    </div>
   </section>
 
 </div><!-- end page-home -->

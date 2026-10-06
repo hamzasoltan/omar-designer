@@ -1841,6 +1841,148 @@ body.light{
 }
 </style>
 
+
+
+<style id="codek-contact-motion">
+/* ---------- Contact entrance motion ---------- */
+#links-section .contact-premium{
+  opacity:0;
+  transform:translateY(34px) scale(.985);
+  filter:blur(6px);
+  transition:
+    opacity .85s cubic-bezier(.16,1,.3,1),
+    transform .95s cubic-bezier(.16,1,.3,1),
+    filter .85s cubic-bezier(.16,1,.3,1);
+}
+#links-section.contact-motion-in .contact-premium{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  filter:blur(0);
+}
+#links-section .contact-social-block,
+#links-section .contact-direct-block{
+  opacity:0;
+  transform:translateY(20px);
+}
+#links-section.contact-motion-in .contact-social-block{
+  animation:contactBlockIn .7s cubic-bezier(.16,1,.3,1) .18s both;
+}
+#links-section.contact-motion-in .contact-direct-block{
+  animation:contactBlockIn .7s cubic-bezier(.16,1,.3,1) .34s both;
+}
+#links-section .contact-social-card{
+  opacity:0;
+  transform:translateY(18px) scale(.96);
+}
+#links-section.contact-motion-in .contact-social-card{
+  animation:contactCardIn .65s cubic-bezier(.16,1,.3,1) both;
+}
+#links-section.contact-motion-in .contact-social-card:nth-child(1){animation-delay:.38s}
+#links-section.contact-motion-in .contact-social-card:nth-child(2){animation-delay:.49s}
+#links-section.contact-motion-in .contact-social-card:nth-child(3){animation-delay:.60s}
+#links-section .contact-direct-card{
+  opacity:0;
+  transform:translateX(14px);
+}
+#links-section.contact-motion-in .contact-direct-card:nth-child(1){
+  animation:contactDirectIn .62s cubic-bezier(.16,1,.3,1) .52s both;
+}
+#links-section.contact-motion-in .contact-direct-card:nth-child(2){
+  animation:contactDirectIn .62s cubic-bezier(.16,1,.3,1) .64s both;
+}
+#links-section .contact-social-icon,
+#links-section .contact-direct-icon{
+  transform:scale(.82) rotate(-10deg);
+}
+#links-section.contact-motion-in .contact-social-icon,
+#links-section.contact-motion-in .contact-direct-icon{
+  animation:contactIconPop .65s cubic-bezier(.16,1,.3,1) .62s both;
+}
+#links-section .contact-divider{
+  transform:scaleY(0);
+  transform-origin:center;
+}
+#links-section.contact-motion-in .contact-divider{
+  animation:contactDividerIn .7s cubic-bezier(.16,1,.3,1) .3s both;
+}
+#links-section .contact-premium::after{
+  content:"";
+  position:absolute;
+  top:-40%;
+  left:-18%;
+  width:34%;
+  height:180%;
+  pointer-events:none;
+  opacity:0;
+  transform:rotate(18deg) translateX(-160%);
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,61,154,.11),
+    rgba(255,255,255,.08),
+    transparent
+  );
+}
+#links-section.contact-motion-in .contact-premium::after{
+  animation:contactSheen 1.35s cubic-bezier(.2,.75,.25,1) .25s both;
+}
+@keyframes contactBlockIn{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes contactCardIn{
+  from{opacity:0;transform:translateY(18px) scale(.96)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes contactDirectIn{
+  from{opacity:0;transform:translateX(14px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes contactIconPop{
+  0%{transform:scale(.82) rotate(-10deg)}
+  65%{transform:scale(1.08) rotate(3deg)}
+  100%{transform:scale(1) rotate(0)}
+}
+@keyframes contactDividerIn{
+  from{transform:scaleY(0)}
+  to{transform:scaleY(1)}
+}
+@keyframes contactSheen{
+  0%{opacity:0;transform:rotate(18deg) translateX(-160%)}
+  15%{opacity:1}
+  100%{opacity:0;transform:rotate(18deg) translateX(470%)}
+}
+@media(max-width:900px){
+  #links-section.contact-motion-in .contact-divider{
+    animation-name:contactDividerMobileIn;
+  }
+  @keyframes contactDividerMobileIn{
+    from{transform:scaleX(0)}
+    to{transform:scaleX(1)}
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #links-section .contact-premium,
+  #links-section .contact-social-block,
+  #links-section .contact-direct-block,
+  #links-section .contact-social-card,
+  #links-section .contact-direct-card{
+    opacity:1!important;
+    transform:none!important;
+    filter:none!important;
+    animation:none!important;
+  }
+  #links-section .contact-social-icon,
+  #links-section .contact-direct-icon,
+  #links-section .contact-divider,
+  #links-section .contact-premium::after{
+    transform:none!important;
+    animation:none!important;
+    opacity:1!important;
+  }
+}
+</style>
+
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>
@@ -2644,5 +2786,30 @@ body.light .site-footer{background:#111;border-top:1px solid rgba(255,255,255,0.
 @media(prefers-reduced-motion:reduce){.metric-card,.metric-icon{transition:none}.metric-card:hover{transform:none}}
 </style>
 
+
+
+
+<script id="codek-contact-motion-js">
+(function(){
+  const contact = document.getElementById('links-section');
+  if(!contact) return;
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    contact.classList.add('contact-motion-in');
+    return;
+  }
+  const reveal = () => contact.classList.add('contact-motion-in');
+  if('IntersectionObserver' in window){
+    const observer = new IntersectionObserver((entries) => {
+      if(entries.some(entry => entry.isIntersecting)){
+        reveal();
+        observer.disconnect();
+      }
+    }, {threshold:.18, rootMargin:'0px 0px -7% 0px'});
+    observer.observe(contact);
+  }else{
+    reveal();
+  }
+})();
+</script>
 
 </body></html>

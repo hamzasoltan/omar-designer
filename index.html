@@ -1563,6 +1563,36 @@ body.light{
   margin-top: .06em !important;
 }
 </style>
+<style id="codek-all-section-headings-arabic-fix">
+/* Arabic multi-line section headings — prevent vertical glyph collisions */
+#services-section > h2,
+#stats-section > h2,
+#work-section > h2,
+#testimonials-section > h2,
+#links-section > h2{
+  line-height:1.22!important;
+  letter-spacing:0!important;
+  font-kerning:normal!important;
+  text-rendering:optimizeLegibility!important;
+}
+#services-section > h2 span,
+#stats-section > h2 span,
+#work-section > h2 span,
+#testimonials-section > h2 span,
+#links-section > h2 span{
+  line-height:inherit!important;
+  letter-spacing:0!important;
+}
+@media(max-width:767px){
+  #services-section > h2,
+  #stats-section > h2,
+  #work-section > h2,
+  #testimonials-section > h2,
+  #links-section > h2{
+    line-height:1.22!important;
+  }
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>

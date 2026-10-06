@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://omardes.rf.gd/ -->
+<html lang="ar" dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المصمم عمر</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./المصمم عمر_files/css2" rel="stylesheet">
+<link rel="stylesheet" href="./المصمم عمر_files/all.min.css">
+<style>
+@font-face{font-family:"Thmanyah Sans";src:url("/fonts/thmanyahsans-Light.otf") format("opentype");font-weight:300;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("/fonts/thmanyahsans-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("/fonts/thmanyahsans-Medium.otf") format("opentype");font-weight:500;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("/fonts/thmanyahsans-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+@font-face{font-family:"Thmanyah Sans";src:url("/fonts/thmanyahsans-Black.otf") format("opentype");font-weight:900;font-display:swap}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--bg:#050505;--fg:#fff;--card:rgba(255,255,255,0.05);--border:rgba(255,255,255,0.1);--muted:rgba(255,255,255,0.5);--pink:#ec4899;--pink2:#f472b6}
+body{font-family:"Thmanyah Sans","IBM Plex Sans Arabic",sans-serif;background:var(--bg);color:var(--fg);overflow-x:hidden;min-height:100vh;direction:rtl;transition:background .5s ease,color .5s ease}
+button,input,textarea,select{font-family:"Thmanyah Sans","IBM Plex Sans Arabic",sans-serif}
+h1,h2,h3,.detail-title-row h1{font-family:"Thmanyah Sans","IBM Plex Sans Arabic",sans-serif;font-weight:700}
+body.light{--bg:#f5f0e8;--fg:#1a1a1a;--card:rgba(0,0,0,0.05);--border:rgba(0,0,0,0.1);--muted:rgba(0,0,0,0.5)}
+body.light #bg-radial{background:radial-gradient(ellipse at center,#ede8dc 0%,#f5f0e8 100%)}
+#bg-radial{position:fixed;inset:0;z-index:0;background:radial-gradient(ellipse at center,rgba(15,15,15,1) 0%,rgba(0,0,0,1) 100%);transition:background .4s}
+#noise{position:fixed;inset:0;z-index:1;opacity:.025;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.blob-wrap{position:fixed;pointer-events:none;z-index:2;filter:blur(35px);opacity:.55;will-change:transform}
+.blob-inner{width:100%;height:100%;will-change:transform}
+#blob1{width:200px;height:200px;top:-40px;right:-40px}
+#blob2{width:180px;height:180px;bottom:-40px;left:-40px}
+#blob3{width:170px;height:170px;bottom:-40px;right:-40px}
+@media(min-width:768px){#blob1{width:420px;height:420px;top:-90px;right:-90px}#blob2{width:360px;height:360px;bottom:-80px;left:-80px}#blob3{width:340px;height:340px;bottom:-75px;right:-75px}}
+@media(min-width:1280px){#blob1{width:580px;height:580px;top:-130px;right:-130px}#blob2{width:500px;height:500px;bottom:-110px;left:-110px}#blob3{width:460px;height:460px;bottom:-100px;right:-100px}}
+#blob1 .blob-inner{background:linear-gradient(135deg,#fff 0%,#fbcfe8 30%,#ec4899 70%,#831843 100%);animation:spin1 20s linear infinite,pulse 9s ease-in-out infinite;border-radius:60% 40% 70% 30% / 40% 60% 40% 60%}
+#blob2 .blob-inner{background:linear-gradient(135deg,#fce7f3 0%,#f472b6 40%,#be185d 100%);animation:spin2 24s linear infinite,pulse 11s ease-in-out infinite .5s;border-radius:30% 70% 40% 60% / 60% 30% 70% 40%}
+#blob3 .blob-inner{background:linear-gradient(135deg,#fff 0%,#db2777 50%,#9d174d 100%);animation:spin1 28s linear infinite reverse,pulse 13s ease-in-out infinite 1s;border-radius:50% 50% 30% 70% / 70% 40% 60% 30%}
+.hero-img{position:relative;z-index:10}
+@keyframes spin1{to{transform:rotate(360deg)}}
+@keyframes spin2{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%,100%{filter:brightness(1) saturate(1)}50%{filter:brightness(1.12) saturate(1.2)}}
+header{position:fixed;top:0;left:0;right:0;z-index:40;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);background:rgba(5,5,5,.7);border-bottom:1px solid var(--border);transition:background .5s}
+body.light header{background:rgba(245,240,232,.7)}
+.header-inner{max-width:78rem;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;gap:1rem;position:relative;min-height:4.5rem}
+.menu-btn,.theme-btn{background:none;border:none;cursor:pointer;color:var(--fg);padding:.5rem;border-radius:.5rem;transition:background .25s,transform .35s cubic-bezier(.34,1.56,.64,1);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.menu-btn{display:none}
+.menu-btn:hover{background:rgba(255,255,255,.1);transform:scale(1.08)}
+.menu-btn:active,.theme-btn:active{transform:scale(.92)}
+.theme-btn{border-radius:9999px;border:1px solid var(--border);background:var(--card);backdrop-filter:blur(10px);padding:.625rem}
+.nav-cta{margin-left:auto;order:1;display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-width:9.5rem;padding:.72rem 1.05rem;border:1px solid rgba(236,72,153,.55);border-radius:9999px;background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(190,24,93,.08));color:var(--fg);font:inherit;font-weight:700;cursor:pointer;box-shadow:0 0 0 rgba(236,72,153,0);transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s,border-color .35s,background .35s}
+.nav-cta i{color:var(--pink);transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.nav-cta:hover{transform:translateY(-2px);border-color:var(--pink);box-shadow:0 0 28px rgba(236,72,153,.22);background:linear-gradient(135deg,rgba(236,72,153,.28),rgba(190,24,93,.12))}
+.nav-cta:hover i{transform:translate(2px,-2px)}
+.desktop-nav{order:2;display:flex;align-items:center;justify-content:center;gap:clamp(1.2rem,2.7vw,2.4rem);margin:auto}
+.nav-link{position:relative;padding:.9rem .1rem;color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:600;white-space:nowrap;transition:color .3s,transform .3s}
+.nav-link::after{content:"";position:absolute;left:50%;bottom:.35rem;width:0;height:2px;border-radius:99px;background:var(--pink);box-shadow:0 0 10px rgba(236,72,153,.75);transform:translateX(-50%);transition:width .35s cubic-bezier(.16,1,.3,1)}
+.nav-link:hover{color:var(--fg);transform:translateY(-2px)}
+.nav-link:hover::after,.nav-link.active::after{width:1.25rem}
+.nav-link.active{color:var(--pink)}
+.header-inner .logo-center{order:3;position:static;transform:none;margin-left:0;flex:0 0 auto}
+.header-inner .logo-center:hover{transform:scale(1.08) rotate(-6deg)}
+.theme-btn:hover{background:rgba(255,255,255,.2);transform:scale(1.08) rotate(15deg)}
+body.light .menu-btn:hover{background:rgba(0,0,0,.1)}
+body.light .theme-btn:hover{background:rgba(0,0,0,.1)}
+#sunIcon,#moonIcon{transition:transform .45s cubic-bezier(.34,1.56,.64,1),opacity .3s}
+.logo-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);cursor:pointer;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.logo-center:hover{transform:translate(-50%,-50%) scale(1.1) rotate(-6deg)}
+.logo-center img{width:3rem;height:3rem;border-radius:9999px;object-fit:cover}
+.logo-center .logo-placeholder{width:3rem;height:3rem;border-radius:9999px;background:linear-gradient(135deg,#ec4899,#be185d);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.2rem;color:#fff}
+@media(max-width:767px){
+  .header-inner{padding:.65rem 1rem;min-height:4rem;justify-content:space-between}
+  .menu-btn{display:flex;order:1;width:2.65rem;height:2.65rem;border:1px solid var(--border);border-radius:9999px;background:var(--card);backdrop-filter:blur(10px)}
+  .theme-btn{order:2;width:2.65rem;height:2.65rem}
+  .header-inner .logo-center{order:3;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0}
+  .header-inner .logo-center:hover{transform:translate(-50%,-50%) scale(1.08) rotate(-6deg)}
+  .desktop-nav,.nav-cta{display:none}
+}
+
+@media(min-width:768px){
+  .header-inner{direction:rtl}
+  .header-inner .theme-btn{order:4}
+  .header-inner .back-btn{order:5}
+}
+
+/* Mobile Menu */
+.mobile-menu{position:fixed;inset:0;z-index:100;backdrop-filter:blur(20px);background:rgba(0,0,0,.9);display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .4s cubic-bezier(.16,1,.3,1),visibility .4s;opacity:0;visibility:hidden}
+body.light .mobile-menu{background:rgba(255,255,255,.9)}
+.mobile-menu.open{opacity:1;visibility:visible}
+.mobile-menu .close-btn{position:absolute;top:2rem;right:1.5rem;background:none;border:none;cursor:pointer;color:var(--fg);padding:.5rem;border-radius:9999px;transition:transform .3s cubic-bezier(.34,1.56,.64,1)}
+.mobile-menu .close-btn:hover{transform:rotate(90deg)}
+.mobile-menu nav{display:flex;flex-direction:column;gap:2rem;text-align:center}
+.mobile-menu nav a{font-size:1.875rem;font-weight:700;color:var(--fg);text-decoration:none;transition:color .25s,transform .25s cubic-bezier(.34,1.56,.64,1);opacity:0;transform:translateY(16px)}
+.mobile-menu.open nav a{opacity:1;transform:translateY(0);transition:color .25s,transform .45s cubic-bezier(.16,1,.3,1)}
+.mobile-menu.open nav a:nth-child(1){transition-delay:.05s}
+.mobile-menu.open nav a:nth-child(2){transition-delay:.1s}
+.mobile-menu.open nav a:nth-child(3){transition-delay:.15s}
+.mobile-menu.open nav a:nth-child(4){transition-delay:.2s}
+.mobile-menu.open nav a:nth-child(5){transition-delay:.25s}
+.mobile-menu.open nav a:nth-child(6){transition-delay:.3s}
+.mobile-menu nav a:hover{color:var(--pink);transform:translateX(-6px) scale(1.05)}
+/* Main */
+main{position:relative;z-index:30;max-width:64rem;margin:0 auto;padding:8rem 1.5rem 2rem}
+/* Hero */
+.hero{display:flex;flex-direction:column;align-items:center;gap:2.5rem;margin-bottom:8rem}
+@media(min-width:768px){.hero{flex-direction:row;justify-content:space-between;gap:4rem}}
+.hero-text{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center}
+@media(min-width:768px){.hero-text{align-items:flex-start;text-align:right}}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem}
+.hero p{font-size:1.125rem;line-height:1.75;color:var(--muted);max-width:32rem}
+.hero-img img,.hero-img .hero-img-placeholder{width:13rem;height:13rem;border-radius:9999px;object-fit:cover;box-shadow:0 0 50px rgba(236,72,153,.3);animation:float 6s ease-in-out infinite;transition:box-shadow .4s}
+.hero-img img:hover,.hero-img .hero-img-placeholder:hover{box-shadow:0 0 70px rgba(236,72,153,.45);animation-play-state:paused}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@media(min-width:768px){.hero-img img,.hero-img .hero-img-placeholder{width:16rem;height:16rem}}
+@media(min-width:1024px){.hero-img img,.hero-img .hero-img-placeholder{width:18rem;height:18rem}}
+.hero-img-placeholder{background:linear-gradient(135deg,#ec4899,#be185d);display:flex;align-items:center;justify-content:center;font-size:3rem}
+/* Section */
+section{margin-bottom:8rem;padding-top:2.5rem}
+section h2{font-size:clamp(2rem,4vw,3.25rem);font-weight:700;margin-bottom:3rem;text-align:center}
+/* Stats */
+.stats-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:start}
+@media(min-width:768px){.stats-grid{grid-template-columns:1fr 1fr}}
+.skills-card{padding:2rem;border-radius:1.5rem;border:1px solid var(--border);background:var(--card);backdrop-filter:blur(10px);display:flex;flex-direction:column;gap:1.75rem}
+.skills-card h3{font-size:1.5rem;font-weight:700;text-align:center}
+@media(min-width:768px){.skills-card h3{text-align:right}}
+.progress-item{}
+.progress-labels{display:flex;justify-content:space-between;margin-bottom:.75rem}
+.progress-labels span{font-size:1.05rem;font-weight:500;color:var(--muted)}
+.progress-track{width:100%;height:1rem;border-radius:9999px;overflow:hidden;border:1px solid var(--border);background:rgba(0,0,0,.5)}
+body.light .progress-track{background:rgba(0,0,0,.1)}
+.progress-fill{height:100%;background:linear-gradient(to left,#ec4899,#f43f5e);border-radius:9999px;width:0;transition:width 1.4s cubic-bezier(.16,1,.3,1)}
+.stat-items{display:flex;flex-direction:column;gap:1.25rem}
+.stat-item{font-size:clamp(1.25rem,2.5vw,1.875rem);font-weight:700;padding:1.25rem 1.5rem;border-radius:1rem;border:1px solid var(--border);background:var(--card);text-align:center}
+@media(min-width:768px){.stat-item{text-align:right}}
+/* Works */
+.works-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:42rem;margin:0 auto 5rem;width:100%}
+@media(min-width:640px){.works-grid{grid-template-columns:1fr 1fr}}
+.cat-btn{border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.2);border-radius:1.5rem;padding:2.25rem 1rem;font-size:1.2rem;font-weight:500;cursor:pointer;color:var(--fg);transition:transform .4s cubic-bezier(.34,1.56,.64,1),border-color .4s,color .4s,box-shadow .4s;backdrop-filter:blur(10px);text-align:center;width:100%;display:flex;align-items:center;justify-content:center;gap:.75rem}
+body.light .cat-btn{border-color:rgba(0,0,0,.2);background:rgba(255,255,255,.2)}
+.cat-btn:hover{transform:scale(1.04) translateY(-4px);border-color:rgba(236,72,153,.5);color:var(--pink);box-shadow:0 14px 32px rgba(236,72,153,.16)}
+.cat-btn:active{transform:scale(.97)}
+.cat-btn .cat-icon{width:2rem;height:2rem;flex-shrink:0;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.cat-btn:hover .cat-icon{transform:scale(1.15) rotate(8deg)}
+.cat-btn .cat-icon svg,.cat-btn .cat-icon i{width:100%;height:100%;font-size:2rem;display:flex;align-items:center;justify-content:center}
+/* Social */
+.social-section-wrap{display:grid;grid-template-columns:1fr;gap:3rem}
+@media(min-width:768px){.social-section-wrap{grid-template-columns:1fr 1fr}}
+.social-sub-section h3{font-size:1.25rem;font-weight:700;margin-bottom:1.5rem;text-align:center;color:var(--muted)}
+.social-list{display:flex;flex-direction:column;gap:1rem}
+.social-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.75rem}
+.social-link{display:flex;align-items:center;gap:1.25rem;padding:1.25rem 1.75rem;border-radius:1rem;border:1px solid var(--border);background:var(--card);text-decoration:none;color:var(--fg);transition:transform .4s cubic-bezier(.34,1.56,.64,1),background .4s,border-color .4s,box-shadow .4s}
+.social-link:hover{transform:scale(1.03) translateY(-3px);border-color:rgba(255,255,255,.25);background:rgba(255,255,255,.1);box-shadow:0 12px 28px rgba(236,72,153,.12)}
+body.light .social-link:hover{background:rgba(0,0,0,.1);border-color:rgba(0,0,0,.2)}
+.social-link.grid-item{flex-direction:column;align-items:center;padding:1.5rem .75rem;gap:.75rem;text-align:center}
+.social-icon{width:3rem;height:3rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.social-link:hover .social-icon{transform:scale(1.15) rotate(8deg)}
+.social-icon svg,.social-icon i{width:1.5rem;height:1.5rem;font-size:1.5rem;line-height:1;display:flex;align-items:center;justify-content:center}
+.social-label{font-size:1.25rem;font-weight:600;flex:1;text-align:right}
+.social-link.grid-item .social-label{font-size:.95rem;text-align:center}
+.social-arrow{opacity:.4;transition:all .3s;font-size:1.1rem;display:inline-flex}
+.social-link:hover .social-arrow{opacity:1;transform:translateX(-4px)}
+/* ── TESTIMONIALS / MARQUEE ── */
+.marquee-section{margin-bottom:8rem;padding-top:2.5rem;overflow:hidden}
+.marquee-section h2{font-size:clamp(2rem,4vw,3.25rem);font-weight:700;margin-bottom:3rem;text-align:center}
+.marquee-track-wrap{overflow:hidden;position:relative;-webkit-mask:linear-gradient(to left,transparent 0,#000 8%,#000 92%,transparent 100%);mask:linear-gradient(to left,transparent 0,#000 8%,#000 92%,transparent 100%)}
+.marquee-track-wrap:hover .marquee-track{animation-play-state:paused}
+.marquee-track{display:flex;gap:1.25rem;width:max-content;will-change:transform}
+.marquee-track.is-fwd{animation:marquee-fwd var(--marquee-dur,40s) linear infinite}
+.marquee-track.is-rev{animation:marquee-rev var(--marquee-dur,40s) linear infinite}
+@keyframes marquee-fwd{0%{transform:translateX(0)}         100%{transform:translateX(var(--set-w))}}
+@keyframes marquee-rev{0%{transform:translateX(var(--set-w))} 100%{transform:translateX(0)}}
+/* Testimonial card */
+.testimonial-card{flex-shrink:0;width:240px;background:var(--card);border:1px solid var(--border);border-radius:1.5rem;padding:1.5rem;display:flex;flex-direction:column;gap:1rem;backdrop-filter:blur(10px)}
+.testimonial-card .t-stars{color:#f59e0b;font-size:1rem;letter-spacing:2px}
+.testimonial-card .t-text{font-size:.925rem;line-height:1.65;color:var(--muted);flex:1}
+.testimonial-card .t-name{font-weight:700;font-size:1rem;color:var(--fg)}
+.testimonial-card .t-role{font-size:.8rem;color:var(--muted)}
+/* Client card */
+.client-card{flex-shrink:0;width:160px;background:var(--card);border:1px solid var(--border);border-radius:1.25rem;padding:1.25rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;backdrop-filter:blur(10px);text-decoration:none;color:var(--fg);transition:transform .4s cubic-bezier(.34,1.56,.64,1),border-color .4s,background .4s;cursor:pointer}
+.client-card:hover{transform:scale(1.06) translateY(-4px);border-color:rgba(236,72,153,.4);background:rgba(255,255,255,.08)}
+body.light .client-card:hover{background:rgba(0,0,0,.08)}
+.client-logo{width:3.5rem;height:3.5rem;border-radius:.75rem;object-fit:cover}
+.client-logo-placeholder{width:3.5rem;height:3.5rem;border-radius:.75rem;background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(190,24,93,.15));display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.client-name{font-size:.875rem;font-weight:600;text-align:center}
+/* Projects page */
+.page{display:none}
+.page.active{display:block}
+.page-header{margin-bottom:1rem}
+.page-header h2{text-align:right;font-size:clamp(2rem,4vw,3rem);font-weight:700;margin-bottom:.5rem}
+.page-count{color:var(--muted);font-size:1.1rem;margin-bottom:2.5rem}
+.filter-pills{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2.5rem}
+.pill{padding:.625rem 1.25rem;border-radius:9999px;font-size:.875rem;font-weight:500;cursor:pointer;border:1px solid var(--border);background:var(--card);color:var(--muted);transition:all .3s cubic-bezier(.34,1.56,.64,1)}
+.pill.active{background:var(--pink);border-color:var(--pink);color:#fff;transform:scale(1.05)}
+.pill:not(.active):hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+body.light .pill:not(.active):hover{background:rgba(0,0,0,.1)}
+.projects-list{display:grid;grid-template-columns:1fr;gap:1.25rem}
+@media(min-width:640px){.projects-list{grid-template-columns:1fr 1fr}}
+.project-card{border-radius:1.5rem;overflow:hidden;border:1px solid var(--border);background:var(--card);transition:transform .4s cubic-bezier(.16,1,.3,1),background .4s,box-shadow .4s}
+.project-card:hover{transform:translateY(-6px) scale(1.01);background:rgba(255,255,255,.08);box-shadow:0 18px 40px rgba(236,72,153,.16)}
+body.light .project-card:hover{background:rgba(0,0,0,.08)}
+.project-thumb{width:100%;aspect-ratio:16/9;overflow:hidden;background:rgba(255,255,255,.03);cursor:pointer}
+body.light .project-thumb{background:rgba(0,0,0,.05)}
+.project-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.project-card:hover .project-thumb img{transform:scale(1.06)}
+.project-thumb .thumb-placeholder{width:100%;height:100%;min-height:12rem;display:flex;align-items:center;justify-content:center}
+.project-info{padding:1.25rem 1.5rem .875rem;display:flex;align-items:center;justify-content:space-between}
+.project-title{font-size:1.1rem;font-weight:700;margin-bottom:.2rem}
+.project-cat{font-size:.8rem;color:var(--muted)}
+.project-meta{display:flex;align-items:center;gap:.75rem}
+.project-year{padding:.4rem .875rem;border-radius:9999px;font-size:.8rem;font-weight:500;background:var(--card);border:1px solid var(--border)}
+.project-actions{padding:.75rem 1.5rem 1.25rem;display:flex;gap:.75rem}
+.btn-view-detail{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.65rem 1rem;border-radius:.75rem;background:linear-gradient(135deg,var(--pink),var(--pink-d));color:#fff;font-family:inherit;font-size:.85rem;font-weight:600;border:none;cursor:pointer;transition:opacity .25s,transform .3s cubic-bezier(.34,1.56,.64,1)}
+.btn-view-detail:hover{opacity:.9;transform:translateY(-2px)}
+.btn-view-detail:active{transform:scale(.96)}
+.btn-open-link{width:2.75rem;height:2.75rem;display:flex;align-items:center;justify-content:center;border-radius:.75rem;background:rgba(255,255,255,0.07);border:1px solid var(--border2);color:var(--text);text-decoration:none;transition:all .3s cubic-bezier(.34,1.56,.64,1);flex-shrink:0}
+.btn-open-link:hover{background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,.25);transform:translateY(-2px) rotate(8deg)}
+/* Empty state */
+.empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5rem 2rem;gap:1.5rem;color:var(--muted);text-align:center}
+.empty-state svg{opacity:.4}
+.empty-state p{font-size:1.1rem}
+/* Project Detail */
+.detail-hero{width:100%;margin-top:5rem;position:relative;background:rgba(255,255,255,.03);overflow:hidden}
+body.light .detail-hero{background:rgba(0,0,0,.05)}
+.slides-wrap{overflow:hidden;width:100%}
+.slides{display:flex;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.slide{min-width:100%;display:flex;align-items:center;justify-content:center;padding:1.25rem}
+.slide img{max-width:100%;max-height:70vh;object-fit:contain;border-radius:1rem}
+.slide .detail-placeholder{width:13rem;height:13rem;border-radius:1.5rem;background:linear-gradient(135deg,rgba(236,72,153,.2),rgba(190,24,93,.2));display:flex;align-items:center;justify-content:center}
+.slider-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.2);color:#fff;width:2.5rem;height:2.5rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:10;transition:background .3s,transform .3s cubic-bezier(.34,1.56,.64,1);padding:0}
+.slider-btn:hover{background:rgba(236,72,153,.7);transform:translateY(-50%) scale(1.12)}
+.slider-btn.prev{right:.75rem}
+.slider-btn.next{left:.75rem}
+.slider-dots{display:flex;justify-content:center;gap:.5rem;padding:.75rem 0}
+.slider-dot{width:.5rem;height:.5rem;border-radius:9999px;background:rgba(255,255,255,.3);cursor:pointer;border:none;transition:background .3s,transform .3s cubic-bezier(.34,1.56,.64,1)}
+.slider-dot.active{background:var(--pink);transform:scale(1.3)}
+.detail-body{padding:2rem 1.5rem}
+.detail-title-row{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1rem}
+.detail-title-row h1{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700}
+.detail-year-badge{padding:.625rem 1.25rem;border-radius:9999px;font-size:.875rem;font-weight:700;background:var(--fg);color:var(--bg);flex-shrink:0;margin-top:.25rem}
+.detail-cat{color:var(--pink);font-size:1.125rem;font-weight:500;margin-bottom:1.5rem}
+.detail-desc{font-size:1.25rem;line-height:1.8;color:var(--fg)}
+/* Back btn */
+.back-btn{background:none;border:none;cursor:pointer;color:var(--fg);padding:.5rem;border-radius:.5rem;display:flex;align-items:center;gap:.5rem;transition:background .25s,transform .3s cubic-bezier(.34,1.56,.64,1)}
+.back-btn:hover{background:var(--card);transform:translateX(-3px)}
+/* SVG icons inline */
+svg{display:inline-block;vertical-align:middle}
+/* Transitions */
+.page{animation:fadeIn .45s cubic-bezier(.16,1,.3,1)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+/* ── SCROLL ANIMATIONS ── */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(36px);transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-scale{opacity:0;transform:scale(.88) rotate(-2deg);transition:opacity .7s cubic-bezier(.34,1.56,.64,1),transform .7s cubic-bezier(.34,1.56,.64,1)}
+.reveal-scale.visible{opacity:1;transform:scale(1) rotate(0)}
+.stagger-1{transition-delay:.06s}
+.stagger-2{transition-delay:.14s}
+.stagger-3{transition-delay:.22s}
+.stagger-4{transition-delay:.30s}
+.stagger-5{transition-delay:.38s}
+.stagger-6{transition-delay:.46s}
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.25rem}
+@media(max-width:767px){.services-grid{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:479px){.services-grid{grid-template-columns:1fr 1fr 1fr}}
+.srv-card{background:var(--card);border:1px solid var(--border);border-radius:1.5rem;padding:1.75rem 1.25rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1rem;text-align:center;backdrop-filter:blur(10px);transition:transform .4s cubic-bezier(.16,1,.3,1),border-color .4s,background .4s,box-shadow .4s}
+.srv-card:hover{transform:translateY(-8px);border-color:rgba(236,72,153,.4);background:rgba(255,255,255,.08);box-shadow:0 16px 40px rgba(236,72,153,.18)}
+body.light .srv-card:hover{background:rgba(0,0,0,.06)}
+.srv-icon{width:3.5rem;height:3.5rem;border-radius:1rem;background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(190,24,93,.2));display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+.srv-card:hover .srv-icon{transform:scale(1.12) rotate(-6deg)}
+.srv-icon svg,.srv-icon i{width:1.75rem;height:1.75rem;font-size:1.75rem;color:var(--pink);stroke:var(--pink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:flex;align-items:center;justify-content:center}
+.srv-title{font-size:1rem;font-weight:700;line-height:1.3}
+.srv-desc{font-size:.825rem;color:var(--muted);line-height:1.6}
+@media(max-width:479px){.srv-title{font-size:.9rem}.srv-desc{font-size:.78rem}.srv-card{padding:1.25rem .875rem 1.1rem;gap:.75rem}.srv-icon{width:2.75rem;height:2.75rem}.srv-icon svg{width:1.35rem;height:1.35rem}}
+</style>
+
+<style id="codek-v2-redesign">
+/* =========================================================
+   CODEK V2 — Editorial Neon Portfolio
+   Existing functionality preserved; visual system replaced.
+   ========================================================= */
+
+:root{
+  --bg:#080808;
+  --fg:#f6f3ee;
+  --card:rgba(255,255,255,.045);
+  --border:rgba(255,255,255,.11);
+  --muted:rgba(246,243,238,.58);
+  --pink:#ff3d9a;
+  --pink2:#ff79bb;
+  --hot:#ff2d8f;
+  --ink:#080808;
+  --surface:#111111;
+  --grid:rgba(255,255,255,.055);
+}
+
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  background:
+    radial-gradient(circle at 82% 8%,rgba(255,61,154,.13),transparent 24rem),
+    radial-gradient(circle at 10% 48%,rgba(255,61,154,.07),transparent 28rem),
+    var(--bg);
+  color:var(--fg);
+  font-family:"Thmanyah Sans","IBM Plex Sans Arabic",sans-serif;
+  letter-spacing:-.012em;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;z-index:3;pointer-events:none;opacity:.45;
+  background-image:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:linear-gradient(to bottom,black,transparent 92%);
+}
+#bg-radial,#noise,.blob-wrap{display:none!important}
+
+/* ---------- Header ---------- */
+header{
+  background:rgba(8,8,8,.72)!important;
+  border-bottom:1px solid rgba(255,255,255,.09)!important;
+  backdrop-filter:blur(24px)!important;
+  -webkit-backdrop-filter:blur(24px)!important;
+}
+.header-inner{
+  max-width:1180px!important;
+  padding:14px 22px!important;
+}
+.logo-center img,.logo-center .logo-placeholder{
+  width:44px!important;height:44px!important;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 8px 28px rgba(255,61,154,.18);
+}
+.menu-btn,.theme-btn{
+  min-width:44px;min-height:44px;
+  border:1px solid rgba(255,255,255,.1)!important;
+  background:rgba(255,255,255,.045)!important;
+}
+.menu-btn:hover,.theme-btn:hover{
+  border-color:rgba(255,61,154,.45)!important;
+  color:var(--pink)!important;
+  transform:none!important;
+}
+
+/* ---------- Main / sections ---------- */
+main{
+  max-width:1180px!important;
+  padding:132px 22px 40px!important;
+}
+section{margin-bottom:150px!important;padding-top:30px!important}
+section h2{
+  text-align:right!important;
+  font-size:clamp(2.5rem,6vw,5rem)!important;
+  line-height:1.02!important;
+  letter-spacing:-.055em!important;
+  margin-bottom:48px!important;
+  max-width:850px;
+}
+section h2 span{color:var(--muted);font-weight:400}
+.section-eyebrow{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:16px;
+  color:var(--pink);
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.section-eyebrow::before{
+  content:"";
+  width:28px;height:1px;background:var(--pink);
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:calc(100vh - 170px);
+  display:grid!important;
+  grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);
+  align-items:center!important;
+  gap:70px!important;
+  margin-bottom:120px!important;
+  position:relative;
+}
+.hero-text{
+  align-items:flex-start!important;
+  text-align:right!important;
+  position:relative;
+}
+.hero-text::after{
+  content:"";
+  position:absolute;
+  width:420px;height:420px;
+  background:radial-gradient(circle,rgba(255,61,154,.17),transparent 68%);
+  right:-100px;top:-100px;
+  pointer-events:none;z-index:-1;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid rgba(255,61,154,.35);
+  background:rgba(255,61,154,.08);
+  color:#ff8bc5;
+  padding:8px 13px;
+  border-radius:999px;
+  font-size:.8rem;font-weight:700;
+  margin-bottom:22px;
+}
+.hero-kicker span{
+  width:7px;height:7px;border-radius:50%;
+  background:#54e38e;
+  box-shadow:0 0 14px #54e38e;
+}
+.hero h1{
+  font-size:clamp(3.25rem,7vw,6.5rem)!important;
+  line-height:.92!important;
+  letter-spacing:-.075em!important;
+  margin-bottom:28px!important;
+}
+.hero h1 em{
+  font-style:normal;
+  color:transparent;
+  background:linear-gradient(100deg,#fff 0%,#ff79bb 42%,#ff2d8f 100%);
+  -webkit-background-clip:text;background-clip:text;
+}
+.hero p{
+  font-size:clamp(1rem,1.6vw,1.2rem)!important;
+  line-height:1.9!important;
+  max-width:650px!important;
+  color:var(--muted)!important;
+}
+.hero-actions{
+  display:flex;flex-wrap:wrap;gap:12px;
+  margin-top:30px;
+}
+.hero-cta{
+  min-height:48px;
+  padding:0 20px;
+  border-radius:13px;
+  font-family:inherit;
+  font-size:.95rem;
+  font-weight:800;
+  cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.hero-cta-primary{
+  border:1px solid var(--pink);
+  color:white;
+  background:linear-gradient(135deg,#ff3d9a,#d91a78);
+  box-shadow:0 14px 36px rgba(255,61,154,.2);
+}
+.hero-cta-ghost{
+  border:1px solid var(--border);
+  color:var(--fg);
+  background:rgba(255,255,255,.045);
+}
+.hero-cta:hover{transform:translateY(-3px)}
+.hero-cta-primary:hover{box-shadow:0 18px 42px rgba(255,61,154,.3)}
+.hero-cta-ghost:hover{border-color:rgba(255,255,255,.28)}
+.hero-meta{
+  display:flex;gap:30px;flex-wrap:wrap;
+  margin-top:40px;padding-top:24px;
+  border-top:1px solid var(--border);
+}
+.hero-meta div{display:flex;flex-direction:column;gap:2px}
+.hero-meta strong{font-size:1.35rem}
+.hero-meta span{font-size:.78rem;color:var(--muted)}
+.hero-img{
+  display:flex!important;justify-content:center;align-items:center;
+}
+.hero-img img,.hero-img .hero-img-placeholder{
+  width:min(34vw,390px)!important;
+  height:min(34vw,390px)!important;
+  border-radius:32px!important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.12),
+    0 35px 100px rgba(0,0,0,.45),
+    0 0 90px rgba(255,61,154,.15)!important;
+  animation:none!important;
+  transform:rotate(3deg);
+}
+.hero-img::before{
+  content:"";
+  position:absolute;
+  width:min(34vw,390px);height:min(34vw,390px);
+  border:1px solid rgba(255,61,154,.45);
+  border-radius:32px;
+  transform:rotate(-5deg) translate(-18px,18px);
+  z-index:-1;
+}
+.hero-img::after{
+  content:"OMAR / DESIGN";
+  position:absolute;
+  bottom:-26px;right:12%;
+  font-size:.68rem;font-weight:800;
+  letter-spacing:.16em;
+  color:rgba(255,255,255,.3);
+}
+
+/* ---------- Services ---------- */
+.services-grid{
+  display:grid!important;
+  grid-template-columns:repeat(12,1fr)!important;
+  gap:14px!important;
+}
+.srv-card{
+  grid-column:span 4;
+  min-height:190px;
+  padding:25px!important;
+  border:1px solid var(--border)!important;
+  border-radius:22px!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025))!important;
+  box-shadow:none!important;
+  backdrop-filter:blur(14px)!important;
+  align-items:flex-start!important;
+  text-align:right!important;
+  justify-content:space-between!important;
+}
+.srv-card:nth-child(1){grid-column:span 6}
+.srv-card:nth-child(2){grid-column:span 6}
+.srv-card:hover{
+  transform:translateY(-6px)!important;
+  border-color:rgba(255,61,154,.4)!important;
+  background:linear-gradient(145deg,rgba(255,61,154,.11),rgba(255,255,255,.035))!important;
+  box-shadow:0 20px 55px rgba(0,0,0,.25)!important;
+}
+.srv-icon{
+  width:48px!important;height:48px!important;
+  border-radius:14px!important;
+  background:rgba(255,61,154,.1)!important;
+  border:1px solid rgba(255,61,154,.18);
+}
+.srv-icon svg,.srv-icon i{color:var(--pink)!important}
+.srv-title{font-size:1.2rem!important}
+.srv-desc{font-size:.9rem!important;line-height:1.75!important}
+
+/* ---------- Stats ---------- */
+.stats-grid{gap:18px!important}
+.skills-card,.stat-item{
+  border:1px solid var(--border)!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.02))!important;
+  box-shadow:none!important;
+}
+.skills-card{
+  border-radius:24px!important;
+  padding:28px!important;
+}
+.skills-card h3{text-align:right!important}
+.stat-items{gap:12px!important}
+.stat-item{
+  border-radius:18px!important;
+  text-align:right!important;
+  padding:22px 24px!important;
+  font-size:1.3rem!important;
+}
+.stat-item::before{
+  content:"";
+  display:inline-block;
+  width:7px;height:7px;border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 15px rgba(255,61,154,.8);
+  margin-left:12px;
+}
+.progress-track{height:8px!important}
+.progress-fill{background:linear-gradient(90deg,#ff2d8f,#ff9dcc)!important}
+
+/* ---------- Works ---------- */
+.works-grid{
+  max-width:none!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,1fr)!important;
+  gap:14px!important;
+}
+.cat-btn{
+  min-height:160px!important;
+  border-radius:22px!important;
+  padding:26px!important;
+  justify-content:space-between!important;
+  text-align:right!important;
+  font-size:1.1rem!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.02))!important;
+  border:1px solid var(--border)!important;
+  position:relative;
+  overflow:hidden;
+}
+.cat-btn::after{
+  content:"↗";
+  position:absolute;left:22px;top:20px;
+  color:rgba(255,255,255,.28);
+  font-size:1.25rem;
+}
+.cat-btn .cat-icon{
+  width:48px!important;height:48px!important;
+  border-radius:14px;
+  background:rgba(255,61,154,.1);
+  color:var(--pink);
+}
+.cat-btn:hover{
+  color:var(--fg)!important;
+  border-color:rgba(255,61,154,.42)!important;
+  background:linear-gradient(145deg,rgba(255,61,154,.13),rgba(255,255,255,.025))!important;
+  box-shadow:0 18px 45px rgba(0,0,0,.24)!important;
+}
+
+/* ---------- Testimonials / Clients ---------- */
+.marquee-section{overflow:visible!important}
+.testimonial-card,.client-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025))!important;
+  border:1px solid var(--border)!important;
+  box-shadow:none!important;
+}
+.testimonial-card{
+  width:310px!important;
+  border-radius:20px!important;
+  padding:22px!important;
+}
+.testimonial-card .t-text{font-size:.9rem!important;line-height:1.8!important}
+.testimonial-card .t-stars{color:#ffb22e!important}
+.client-card{
+  width:170px!important;
+  min-height:155px;
+  border-radius:18px!important;
+}
+.client-card:hover{
+  border-color:rgba(255,61,154,.4)!important;
+  background:rgba(255,61,154,.07)!important;
+}
+.marquee-track-wrap{
+  mask-image:linear-gradient(to left,transparent 0,#000 7%,#000 93%,transparent 100%)!important;
+}
+
+/* ---------- Contact ---------- */
+.social-section-wrap{gap:18px!important}
+.social-sub-section{
+  padding:25px!important;
+  border:1px solid var(--border);
+  border-radius:22px;
+  background:rgba(255,255,255,.035);
+}
+.social-sub-section h3{text-align:right!important;color:var(--fg)!important}
+.social-grid{grid-template-columns:repeat(3,1fr)!important;gap:10px!important}
+.social-link.grid-item{
+  min-height:118px;
+  padding:16px!important;
+  border-radius:16px!important;
+  background:rgba(255,255,255,.035)!important;
+}
+.social-link.grid-item:hover{
+  border-color:rgba(255,61,154,.4)!important;
+  background:rgba(255,61,154,.08)!important;
+}
+
+/* ---------- Projects page ---------- */
+.page-header h2{
+  font-size:clamp(2.5rem,6vw,4.5rem)!important;
+  letter-spacing:-.055em!important;
+}
+.filter-pills{gap:8px!important}
+.pill{
+  min-height:44px;
+  padding:9px 15px!important;
+  background:rgba(255,255,255,.035)!important;
+}
+.pill.active{
+  background:var(--pink)!important;
+  border-color:var(--pink)!important;
+}
+.projects-list{gap:14px!important}
+.project-card{
+  border-radius:22px!important;
+  background:rgba(255,255,255,.035)!important;
+  border-color:var(--border)!important;
+}
+.project-card:hover{
+  transform:translateY(-7px)!important;
+  box-shadow:0 25px 60px rgba(0,0,0,.3)!important;
+}
+.project-thumb{aspect-ratio:4/3!important}
+.project-info{padding:18px 20px 10px!important}
+.project-title{font-size:1.05rem!important}
+.btn-view-detail{
+  background:linear-gradient(135deg,var(--pink),#d51b77)!important;
+}
+.btn-open-link{border-color:var(--border2,rgba(255,255,255,.11))!important;color:var(--fg)!important}
+
+/* ---------- Detail ---------- */
+.detail-hero{
+  margin-top:3rem!important;
+  border:1px solid var(--border);
+  border-radius:24px;
+  background:rgba(255,255,255,.035)!important;
+}
+.detail-body{padding:30px!important}
+.detail-title-row h1{letter-spacing:-.045em}
+.detail-cat{color:var(--pink)!important}
+.detail-desc{color:var(--muted)!important;max-width:800px}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:#050505!important;
+  border-top:1px solid rgba(255,255,255,.09)!important;
+}
+.footer-inner{max-width:1180px;margin:auto}
+.footer-name{color:var(--fg)!important}
+.footer-dev{color:var(--pink)!important}
+
+/* ---------- Accessibility / motion ---------- */
+button,a{outline-offset:4px}
+button:focus-visible,a:focus-visible{
+  outline:2px solid var(--pink);
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition-duration:.001ms!important;
+  }
+}
+
+/* ---------- Light mode ---------- */
+body.light{
+  --bg:#f4f0eb;
+  --fg:#171515;
+  --card:rgba(0,0,0,.035);
+  --border:rgba(0,0,0,.12);
+  --muted:rgba(23,21,21,.58);
+  background:
+    radial-gradient(circle at 82% 8%,rgba(255,61,154,.11),transparent 24rem),
+    #f4f0eb!important;
+}
+body.light::before{opacity:.22}
+body.light header{background:rgba(244,240,235,.78)!important}
+body.light .hero-cta-ghost,
+body.light .srv-card,
+body.light .skills-card,
+body.light .stat-item,
+body.light .cat-btn,
+body.light .testimonial-card,
+body.light .client-card,
+body.light .social-sub-section,
+body.light .social-link.grid-item,
+body.light .project-card{
+  background:rgba(255,255,255,.58)!important;
+}
+body.light .site-footer{background:#171515!important}
+body.light .hero h1 em{background:linear-gradient(100deg,#171515 0%,#d72a82 55%,#a8155d 100%);-webkit-background-clip:text;background-clip:text}
+
+/* ---------- Responsive ---------- */
+@media(max-width:900px){
+  main{padding-top:110px!important}
+  .hero{
+    min-height:auto;
+    grid-template-columns:1fr!important;
+    gap:45px!important;
+    text-align:center;
+  }
+  .hero-text{align-items:center!important;text-align:center!important}
+  .hero-meta{justify-content:center}
+  .hero-img{order:1!important}
+  .hero-text{order:2!important}
+  .hero-img img,.hero-img .hero-img-placeholder,
+  .hero-img::before{width:min(72vw,330px)!important;height:min(72vw,330px)!important}
+  .hero h1{font-size:clamp(3.4rem,13vw,6rem)!important}
+  .hero p{max-width:620px!important}
+  section h2{text-align:center!important}
+  .section-eyebrow{justify-content:center}
+  .srv-card,.srv-card:nth-child(1),.srv-card:nth-child(2){grid-column:span 6}
+  .works-grid{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:620px){
+  main{padding-left:15px!important;padding-right:15px!important}
+  section{margin-bottom:105px!important}
+  section h2{font-size:clamp(2.3rem,12vw,3.5rem)!important}
+  .hero{margin-bottom:90px!important}
+  .hero-actions{width:100%;flex-direction:column}
+  .hero-cta{width:100%}
+  .hero-meta{gap:18px;width:100%;justify-content:space-between}
+  .hero-meta strong{font-size:1.1rem}
+  .hero-meta span{font-size:.7rem}
+  .srv-card,.srv-card:nth-child(1),.srv-card:nth-child(2){grid-column:span 12}
+  .srv-card{min-height:155px}
+  .works-grid{grid-template-columns:1fr!important}
+  .cat-btn{min-height:120px!important}
+  .social-grid{grid-template-columns:1fr 1fr!important}
+  .social-link.grid-item:last-child{grid-column:1/-1}
+  .detail-title-row{gap:15px}
+  .detail-year-badge{padding:7px 11px}
+}
+@media(max-width:390px){
+  .social-grid{grid-template-columns:1fr!important}
+  .social-link.grid-item:last-child{grid-column:auto}
+  .hero-meta{gap:10px}
+}
+</style>
+
+
+<style id="codek-v2-fixes">
+:root{
+  --pink-d:#d91a78;
+  --border2:rgba(255,255,255,.11);
+  --text:#f6f3ee;
+}
+body.light{
+  --border2:rgba(0,0,0,.12);
+  --text:#171515;
+}
+</style>
+
+</head>
+<body id="body" class="">
+<div id="bg-radial"></div>
+<div id="noise"></div>
+<div class="blob-wrap" id="blob1" style="transform: rotate(0deg);"><div class="blob-inner"></div></div>
+<div class="blob-wrap" id="blob2" style="transform: rotate(0deg);"><div class="blob-inner"></div></div>
+<div class="blob-wrap" id="blob3" style="transform: rotate(0deg);"><div class="blob-inner"></div></div>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <button class="menu-btn" id="menuBtn" onclick="openMenu()" aria-label="القائمة">
+      <i class="fa-solid fa-bars" style="font-size:1.25rem"></i>
+    </button>
+
+    <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+      <a href="#home-section" class="nav-link active" onclick="scrollToSection('home-section');return false">الرئيسية</a>
+      <a href="#services-section" class="nav-link" onclick="scrollToSection('services-section');return false">خدماتي</a>
+      <a href="#work-section" class="nav-link" onclick="scrollToSection('work-section');return false">أعمالي</a>
+      <a href="#testimonials-section" class="nav-link" onclick="scrollToSection('testimonials-section');return false">آراء العملاء</a>
+      <a href="#links-section" class="nav-link" onclick="scrollToSection('links-section');return false">تواصل معي</a>
+    </nav>
+
+    <button class="back-btn" id="backBtn" onclick="goBack()" style="display:none">
+      <i class="fa-solid fa-arrow-right" style="font-size:1.3rem"></i>
+    </button>
+    <div class="logo-center" onclick="showPage('home')">
+              <img src="./المصمم عمر_files/logo.jpg" alt="logo">
+          </div>
+    <button class="nav-cta" onclick="scrollToSection('links-section')">
+      <span>ابدأ مشروعك</span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="تبديل الوضع">
+      <i id="sunIcon" class="fa-solid fa-sun" style="font-size: 1.1rem;"></i>
+      <i id="moonIcon" class="fa-solid fa-moon" style="font-size: 1.1rem; display: none;"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-btn" onclick="closeMenu()">
+    <i class="fa-solid fa-xmark" style="font-size:1.9rem"></i>
+  </button>
+  <nav>
+    <a href="https://omardes.rf.gd/#home-section" onclick="scrollToSection('home-section');closeMenu()">الرئيسية</a>
+    <a href="https://omardes.rf.gd/#services-section" onclick="scrollToSection('services-section');closeMenu()">الخدمات</a>
+    <a href="https://omardes.rf.gd/#stats-section" onclick="scrollToSection('stats-section');closeMenu()">الاحصائيات</a>
+    <a href="https://omardes.rf.gd/#work-section" onclick="scrollToSection('work-section');closeMenu()">المعرض</a>
+    <a href="https://omardes.rf.gd/#testimonials-section" onclick="scrollToSection('testimonials-section');closeMenu()">آراء العملاء</a>
+    <a href="https://omardes.rf.gd/#links-section" onclick="scrollToSection('links-section');closeMenu()">الروابط</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- ═══════ HOME PAGE ═══════ -->
+<div class="page active" id="page-home">
+
+  <!-- Hero -->
+  <div class="hero reveal visible" id="home-section">
+    <div class="hero-text" style="order:2">
+      <div class="hero-kicker"><span></span> متاح لمشاريع جديدة</div>
+      <h1>أحوّل الفكرة<br><em>إلى هوية تُرى.</em></h1>
+      <p>أنا عمر، مصمم محتوى بصري أبني شعارات وهويات وحملات تجعل العلامات أكثر وضوحًا، حضورًا، وقابلية للتذكّر.</p>
+      <div class="hero-actions">
+        <button class="hero-cta hero-cta-primary" onclick="scrollToSection('work-section')">
+          <span>شاهد أعمالي</span><i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="hero-cta hero-cta-ghost" onclick="scrollToSection('links-section')">
+          <span>لنتحدث عن مشروعك</span>
+        </button>
+      </div>
+      <div class="hero-meta">
+        <div><strong>+9</strong><span>سنوات خبرة</span></div>
+        <div><strong>+500</strong><span>مشروع</span></div>
+        <div><strong>98%</strong><span>تسليم بالموعد</span></div>
+      </div>
+    </div>
+    <div class="hero-img reveal-scale visible" style="order:1">
+              <div class="hero-img-placeholder">
+                      <img src="./المصمم عمر_files/logo.jpg" alt="logo" style="width:100%;height:100%;object-fit:cover;border-radius:9999px">
+                  </div>
+          </div>
+  </div>
+
+  <!-- Services -->
+      <section id="services-section">
+    <div class="section-eyebrow">01 / الخدمات</div><h2 class="reveal visible">أصنع حضورًا بصريًا<br><span>يُلاحظ من أول نظرة.</span></h2>
+    <div class="services-grid">
+            <div class="srv-card reveal stagger-1 visible">
+        <div class="srv-icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div>
+          <div class="srv-title">تصميم الشعارات</div>
+                    <div class="srv-desc" style="margin-top:.4rem">تصميم شعارات احترافية تعبّر عن هوية العلامة بأسلوب مميز وسهل التذكّر</div>
+                  </div>
+      </div>
+            <div class="srv-card reveal stagger-2 visible">
+        <div class="srv-icon">
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div>
+          <div class="srv-title">تصاميم سوشيال ميديا</div>
+                    <div class="srv-desc" style="margin-top:.4rem">تصميم محتوى جذاب للسوشيال ميديا يعزز التفاعل ويقوي حضور العلامة</div>
+                  </div>
+      </div>
+            <div class="srv-card reveal stagger-3 visible">
+        <div class="srv-icon">
+          <i class="fa-solid fa-pen-ruler"></i>
+        </div>
+        <div>
+          <div class="srv-title">تصميم هويات بصرية</div>
+                    <div class="srv-desc" style="margin-top:.4rem">بناء هوية بصرية متكاملة توحّد شكل العلامة وتعكس احترافيتها</div>
+                  </div>
+      </div>
+            <div class="srv-card reveal stagger-4 visible">
+        <div class="srv-icon">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <div>
+          <div class="srv-title">تصميم إعلانات</div>
+                    <div class="srv-desc" style="margin-top:.4rem">تصميم إعلانات احترافية ملفتة تساعد على جذب العملاء وزيادة الانتشار</div>
+                  </div>
+      </div>
+            <div class="srv-card reveal stagger-5 visible">
+        <div class="srv-icon">
+          <i class="fa-solid fa-bullhorn"></i>
+        </div>
+        <div>
+          <div class="srv-title">تصميم حملات تسويقية</div>
+                    <div class="srv-desc" style="margin-top:.4rem">تصميم حملات تسويقية فعّالة تزيد الانتشار وتعزز التأثير</div>
+                  </div>
+      </div>
+            <div class="srv-card reveal stagger-6 visible">
+        <div class="srv-icon">
+          <i class="fa-solid fa-envelope-open-text"></i>
+        </div>
+        <div>
+          <div class="srv-title">تصميم تهنئات</div>
+                    <div class="srv-desc" style="margin-top:.4rem">تصميم تهنئات أنيقة تناسب جميع المناسبات بأسلوب احترافي</div>
+                  </div>
+      </div>
+          </div>
+  </section>
+  
+  <!-- Stats -->
+  <section id="stats-section">
+    <div class="section-eyebrow">02 / الخبرة</div><h2 class="reveal visible">خبرة تُترجم إلى<br><span>نتائج قابلة للقياس.</span></h2>
+    <div class="stats-grid">
+      <div class="skills-card reveal stagger-2 visible" style="order:2">
+        <h3>الأدوات التي أستخدمها</h3>
+                <div class="progress-item">
+          <div class="progress-labels">
+            <span>100%</span>
+            <span>Canva</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="100" style="width: 100%;"></div>
+          </div>
+        </div>
+                <div class="progress-item">
+          <div class="progress-labels">
+            <span>90%</span>
+            <span>AI (الذكاء الاصطناعي)</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="90" style="width: 90%;"></div>
+          </div>
+        </div>
+                <div class="progress-item">
+          <div class="progress-labels">
+            <span>30%</span>
+            <span>Adobe Illustrator</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="30" style="width: 30%;"></div>
+          </div>
+        </div>
+                <div class="progress-item">
+          <div class="progress-labels">
+            <span>25%</span>
+            <span>Adobe Photoshop</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" data-width="25" style="width: 25%;"></div>
+          </div>
+        </div>
+              </div>
+      <div class="stat-items" style="order:1">
+                <div class="stat-item reveal stagger-1 visible">+9 سنوات خبرة</div>                <div class="stat-item reveal stagger-2 visible">+500 مشروع</div>
+                <div class="stat-item reveal stagger-3 visible">+ %98 تسليم بالموعد</div>
+                <div class="stat-item reveal stagger-4 visible">+ %95 نسبة رضى العملاء</div>
+              </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="work-section">
+    <div class="section-eyebrow">03 / Selected Work</div><h2 class="reveal visible">مشاريع صنعت<br><span>فرقًا بصريًا.</span></h2>
+    <div class="works-grid">
+            <button class="cat-btn reveal stagger-1 visible" onclick="showProjects('حملات تسويقية')">
+        <span class="cat-icon"><i class="fa-solid fa-bullhorn"></i></span>        حملات تسويقية      </button>
+            <button class="cat-btn reveal stagger-2 visible" onclick="showProjects('سوشيال ميديا')">
+        <span class="cat-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>        سوشيال ميديا      </button>
+            <button class="cat-btn reveal stagger-3 visible" onclick="showProjects('هويات بصرية')">
+        <span class="cat-icon"><i class="fa-solid fa-layer-group"></i></span>        هويات بصرية      </button>
+            <button class="cat-btn reveal stagger-4 visible" onclick="showProjects('شعارات')">
+        <span class="cat-icon"><i class="fa-solid fa-pen-nib"></i></span>        شعارات      </button>
+            <button class="cat-btn reveal stagger-5 visible" onclick="showProjects('كاروسيل')">
+        <span class="cat-icon"><i class="fa-solid fa-grip"></i></span>        كاروسيل      </button>
+            <button class="cat-btn reveal stagger-6 visible" onclick="showProjects('تهنئات')">
+        <span class="cat-icon"><i class="fa-solid fa-gift"></i></span>        تهنئات      </button>
+          </div>
+  </section>
+
+  <!-- Testimonials & Clients -->
+    <section class="marquee-section" id="testimonials-section">
+        <div class="section-eyebrow">04 / الثقة</div><h2 class="reveal visible">كلام العملاء<br><span>أفضل من أي وصف.</span></h2>
+    <div class="marquee-track-wrap" style="margin-bottom:2.5rem">
+      <div class="marquee-track is-rev" id="testimonialsTrack" style="--set-w: 2337.777777777778px; --marquee-dur: 29s;">
+        <div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div>      <div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">خلال تجربتي وتعاملي مع المصمم عمر 
+قدرة الإبداع لديه عالية و يهتم بادق التفاصيل في تصميماته و بالإضافة إلى قدرته على فهم طلبات العميل 
+والتعامل المريح معه يجعل من السهل إيصال الفكرة لينتج تصميم قوي ومميز</div><div><div class="t-name">أحمد</div><div class="t-role">مالك مجمع البوتات</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★</div><div class="t-text">خلال تجربتي مع المصمم عمر، لاحظت إبداعه واهتمامه بالتفاصيل، بالإضافة إلى فهمه الجيد لطلبات العميل وسهولة التعامل معه، مما يساعد في الوصول لتصميم مميز وقوي. تقييمي له 4 من 5 لأنني أتطلع لرؤية المزيد منه.</div><div><div class="t-name">كرار</div><div class="t-role">مالك حقيبة المصمم</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تسلم يا مصمم عمر والله على هالتصميم الجبار شغلك كلش قوي وذوقك عالي وأفكارك مميزة وأهم شيء تسليم بالموعد أبدعت بمعنى الكلمة 👌✨</div><div><div class="t-name">حسين رسول</div><div class="t-role">أحد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله، تبارك الله!
+شغل احترافي جدًا، وتعامل في قمة الاحترام، ونتيجة سريعة بخبرة واضحة ومميزة شكرا للمصمم عمر على الاحترافية</div><div><div class="t-name">معاذ وليد</div><div class="t-role">مالك Bitro DV</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">أخي عمر ماشاء لله عنك ممتاز في إيصال الفكرة الي في بالي وتحويلها إلى لوحة فنية تخطف قلوب المشاهدين وتجذب انتباههم شكرا لك ❤️</div><div><div class="t-name">أحمد معارتمصريني</div><div class="t-role">مالك متجر القناص</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">تصميم خرافي جدا ويجذب الانتباه وفي مميزات كتيره جدا زي الدقة في التفاصيل ودقة الصوره ولا يوجد فيه اي اخطاء وكل شيء خرافي تسلم يا عمر</div><div><div class="t-name">عبد الرحمن</div><div class="t-role">مالك متجر سهلة</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله عليك يا عمر 👏
+ممتاز بكل شيء: من الفكرة، للتصميم، وسرعة الإنجاز، وجودة الشغل عالية جدًا 🔥
+وكمان تسليم قبل الموعد وهذا شيء يشهد لك بالاحترافية 👍
+بارك الله فيك وجزاك الله خير 🥰</div><div><div class="t-name">عمر شيخ الدار</div><div class="t-role">احد العملاء</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله سريع بالتنفيذ وبنفس الوقت التصميم يكون جداً مرضي ، أفكارك رائعة و إتباعك لإرشادات الهوية ممتاز.</div><div><div class="t-name">مشعل الهذلي</div><div class="t-role">مؤسس شركة جَبَل</div></div></div><div class="testimonial-card"><div class="t-stars">★★★★★</div><div class="t-text">ما شاء الله تبارك الله تصميم ابداعي ومميز  وبجودة عالية في وقت جدا قصير واسعار مرضية وممتازة مبدع بمعنى الكلمة جزاك الله خير</div><div><div class="t-name">مشاعل الديبان</div><div class="t-role">معلمة حلقات</div></div></div></div>
+    </div>
+    
+        <h2 class="reveal visible" style="margin-top:0">عملاؤنا</h2>
+    <div class="marquee-track-wrap">
+      <div class="marquee-track marquee-track-rev is-rev" id="clientsTrack" style="--set-w: 1797.7777777777778px; --marquee-dur: 22s;">
+        <a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a>      <a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a><a class="client-card" href="https://t.me/BitroDev" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_5507.jpg" alt="بيترو للتكنولوجيا"><div class="client-name">بيترو للتكنولوجيا</div></a><a class="client-card" href="https://t.me/TheDesignX" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_6891.jpg" alt="حقيبة المصمم"><div class="client-name">حقيبة المصمم</div></a><a class="client-card" href="https://t.me/Jabal_channel" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306826_7792.jpg" alt="جَبَل للخدمات الأمنية"><div class="client-name">جَبَل للخدمات الأمنية</div></a><a class="client-card" href="https://elmonsf.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776306977_9077.png" alt="المنصف في القدرات"><div class="client-name">المنصف في القدرات</div></a><a class="client-card" href="https://t.me/botcomp1" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307053_6561.jpg" alt="مجمع البوتات"><div class="client-name">مجمع البوتات</div></a><a class="client-card" href="https://t.me/rnrzi" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307185_5397.jpg" alt="رؤية الحدث الإخبارية"><div class="client-name">رؤية الحدث الإخبارية</div></a><a class="client-card" href="https://t.me/fontsX3" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776307602_7012.png" alt="ملحقات و خطوط التصميم"><div class="client-name">ملحقات و خطوط التصميم</div></a><a class="client-card" href="https://sa.carseer.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1776801663_8002.png" alt="شركة كارسير للسيارات"><div class="client-name">شركة كارسير للسيارات</div></a><a class="client-card" href="https://sniper.sooqnaa.com/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1778529163_6706.jpg" alt="متجر القناص"><div class="client-name">متجر القناص</div></a><a class="client-card" href="https://www.utqs.org.sa/" target="_blank" rel="noopener noreferrer"><img class="client-logo" src="./المصمم عمر_files/client_1785632430_2004.png" alt="جمعية مدكر"><div class="client-name">جمعية مدكر</div></a></div>
+    </div>
+      </section>
+  
+  <!-- Social / Contact -->
+  <section id="links-section">
+    <div class="section-eyebrow">05 / Contact</div><h2 class="reveal visible">لديك فكرة؟<br><span>خلّينا نحولها لشيء يُرى.</span></h2>
+    <div class="social-section-wrap">
+            <div class="social-sub-section reveal stagger-1 visible">
+        <h3>تابعني على</h3>
+        <div class="social-grid">
+                    <a href="https://t.me/omardisiner" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
+            <div class="social-icon" style="background:#229ed922;color:#229ed9">
+              <i class="fa-brands fa-telegram"></i>            </div>
+            <span class="social-label">قناة تليجرام</span>
+          </a>
+                    <a href="https://www.instagram.com/omardisiner/?hl=ar" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
+            <div class="social-icon" style="background:#e1306c22;color:#e1306c">
+              <i class="fa-brands fa-instagram"></i>            </div>
+            <span class="social-label">انستجرام</span>
+          </a>
+                    <a href="https://www.behance.net/9e32d920" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
+            <div class="social-icon" style="background:#1769ff22;color:#1769ff">
+              <i class="fab fa-behance"></i>            </div>
+            <span class="social-label">بيهانس</span>
+          </a>
+                  </div>
+      </div>
+      
+            <div class="social-sub-section reveal stagger-2 visible">
+        <h3>تواصل معي</h3>
+        <div class="social-grid">
+                    <a href="https://t.me/Omaremj_bot" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
+            <div class="social-icon" style="background:#229ed922;color:#229ed9">
+              <i class="fa-brands fa-telegram"></i>            </div>
+            <span class="social-label">تواصل تليجرام</span>
+          </a>
+                    <a href="mailto:Omarsharony9@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link grid-item">
+            <div class="social-icon" style="background:#ea433522;color:#ea4335">
+              <i class="fa-solid fa-link"></i>            </div>
+            <span class="social-label">تواصل جيميل</span>
+          </a>
+                  </div>
+      </div>
+      
+      
+          </div>
+  </section>
+
+</div><!-- end page-home -->
+
+<!-- ═══════ PROJECTS PAGE ═══════ -->
+<div class="page" id="page-projects">
+  <div class="page-header">
+    <h2 id="projects-title">المشاريع</h2>
+    <p class="page-count" id="projects-count">0 مشاريع</p>
+  </div>
+  <div class="filter-pills" id="filterPills">
+        <button class="pill" onclick="filterProjects('حملات تسويقية')">حملات تسويقية</button>
+        <button class="pill" onclick="filterProjects('سوشيال ميديا')">سوشيال ميديا</button>
+        <button class="pill" onclick="filterProjects('هويات بصرية')">هويات بصرية</button>
+        <button class="pill" onclick="filterProjects('شعارات')">شعارات</button>
+        <button class="pill" onclick="filterProjects('كاروسيل')">كاروسيل</button>
+        <button class="pill" onclick="filterProjects('تهنئات')">تهنئات</button>
+      </div>
+  <div class="projects-list" id="projectsList"></div>
+</div>
+
+<!-- ═══════ PROJECT DETAIL PAGE ═══════ -->
+<div class="page" id="page-detail">
+  <div class="detail-hero" id="detailHero">
+    <div class="slides-wrap"><div class="slides" id="detailSlides"></div></div>
+    <button class="slider-btn prev" id="sliderPrev" onclick="slideMove(-1)" style="display:none">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <button class="slider-btn next" id="sliderNext" onclick="slideMove(1)" style="display:none">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+  <div class="detail-body">
+    <div class="detail-title-row">
+      <h1 id="detailTitle"></h1>
+      <span class="detail-year-badge" id="detailYear"></span>
+    </div>
+    <p class="detail-cat" id="detailCat"></p>
+    <p class="detail-desc" id="detailDesc"></p>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-name">عمر</div>
+      <div class="footer-desc">مصمم جرافيك بخبرة 9 سنوات وأكثر من ٤٥٠ مشروع</div>
+    </div>
+    <div class="footer-socials">
+      <a href="https://t.me/omardisiner" target="_blank" rel="noopener noreferrer" class="footer-social-btn" style="--sc:#229ED9" title="قناة تليجرام">
+        <span class="footer-social-icon"><i class="fa-brands fa-telegram"></i></span>
+        <span class="footer-social-ripple"></span>
+      </a>
+      <a href="https://www.instagram.com/omardisiner/?hl=ar" target="_blank" rel="noopener noreferrer" class="footer-social-btn" style="--sc:#E1306C" title="انستجرام">
+        <span class="footer-social-icon"><i class="fa-brands fa-instagram"></i></span>
+        <span class="footer-social-ripple"></span>
+      </a>
+      <a href="https://www.behance.net/9e32d920" target="_blank" rel="noopener noreferrer" class="footer-social-btn" style="--sc:#1769FF" aria-label="Behance" title="بيهانس">
+        <span class="footer-social-icon"><i class="fab fa-behance"></i></span>
+        <span class="footer-social-ripple"></span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    جميع الحقوق محفوظة
+  </div>
+</footer>
+
+<script>
+// ─── DATA ───
+const allProjects = [{"id":45,"title":"حملة تسويقية لشركة المراعي","year":"2026","category":"حملات تسويقية","description":"أحدث أعمالي في الحملات الإعلانية لشركة المراعي للترويج لحليب الفراولة، تحت شعار \"بطعم الطبيعة\" دلالة على ان المنتج بمكونات طبيعية","link":"https:\/\/t.me\/omardisiner\/849","image":"proj_1789989391_4067.jpg","images":["extra_1789989391_1305_0.jpg","extra_1789989391_8145_1.jpg","extra_1789989391_3606_2.jpg","extra_1789989391_2497_3.jpg","extra_1789989391_2293_4.jpg","extra_1789989391_5360_5.jpg","extra_1789989391_8855_6.jpg","extra_1789989391_4738_7.jpg","extra_1789989391_9275_8.jpg"]},{"id":46,"title":"حملة تسويقية لشركة ماشا","year":"2026","category":"حملات تسويقية","description":"آخر أعمالي في الحملات التسويقية لمنتج كريم واقي شمس اعتمدت على العناصر الأساسية في البحر مثل الشمس والرمال والماء","link":"https:\/\/t.me\/omardisiner\/850","image":"proj_1791146477_5025.jpg","images":["extra_1791146477_2529_0.jpg","extra_1791146477_6232_1.jpg","extra_1791146477_6932_2.jpg","extra_1791146477_9772_3.jpg","extra_1791146477_8353_4.jpg","extra_1791146477_7924_5.jpg"]},{"id":3,"title":"شعار قناة بوتات وبرمجة","year":"2026","category":"شعارات","description":"مجموعة من أعمالي في تصميم الشعارات لقناة مجمع البوتات ❤️‍🔥","link":"https:\/\/t.me\/omardisiner\/286?single","image":"proj_1776351468_4132.jpg","images":["extra_1776351468_6826_0.jpg"]},{"id":4,"title":"شعار قناة اخبارية بإسم رؤية الحدث","year":"2026","category":"شعارات","description":"أحدث أعمالي في تصميم الشعارات🎨❤️‍🔥\r\n شعار قناة \"رؤية الحدث\" الإخبارية، شعار إبداعي يرتكز على فكرة دمج العين بالتاء المربوطة ✒️👁️.","link":"https:\/\/t.me\/omardisiner\/736?single","image":"proj_1776351555_2613.png","images":["extra_1776351555_6463_0.png","extra_1776351555_5368_1.png","extra_1776351555_1508_2.png"]},{"id":39,"title":"تصميمي لعبارة تحفيزية","year":"2026","category":"سوشيال ميديا","description":"جزء من مشاركاتي في مسابقة الحقيبة والقناص 🛫 💎\r\nتصميمي للمشاركة في مسابقة حقيبة المصمم ومتجر القناص استخدمت في التصميم بعض العناصر التي تدل على المحاولة والطموح 👑 ⭐️","link":"https:\/\/t.me\/omardisiner\/785?single","image":"proj_1779583138_2280.jpg","images":[]},{"id":6,"title":"بعض أعمالي في السوشيال ميديا 🎨✨","year":"2026","category":"سوشيال ميديا","description":"بعض أعمالي في تصاميم السوشيال ميديا 🎨✨\r\nتصميم يوضح نصائح تصميم مميزة ترفع جودة عملك بشكل واضح 💡🚀","link":"https:\/\/t.me\/omardisiner\/737","image":"proj_1776352284_9648.png","images":[]},{"id":40,"title":"تصاميم عيد الأضحى لشركة جبل","year":"2026","category":"تهنئات","description":"تصميمي بالتعاون مع جبل 🏔\r\nآخر أعمالي في تصميمات الحملات التسويقية لعيد الأضحى بالتعاون مع فريق جبل استعملت في التصميم ألوان وعناصر الهوية الخاصة بجبل لإنشاء الحملة 🎛 📜","link":"https:\/\/t.me\/omardisiner\/793?single","image":"proj_1780035890_9629.jpg","images":["extra_1780035890_6734_0.jpg","extra_1780035890_9698_1.jpg","extra_1780035890_3530_2.jpg"]},{"id":8,"title":"تصميم تهنئات العيد لشركة جبل","year":"2026","category":"تهنئات","description":"مجموعة تصاميم جاهزة ومميزة تناسب أجواء العيد\r\n وتضيف لمسة احترافية لأعمالك 🎨🌙","link":"https:\/\/t.me\/omardisiner\/691?single","image":"proj_1776352820_8054.jpg","images":["extra_1776352820_2136_0.jpg","extra_1776352820_1589_1.jpg"]},{"id":9,"title":"كاروسيل عن اهم نصائح التصميم","year":"2026","category":"كاروسيل","description":"","link":"https:\/\/t.me\/omardisiner\/293?single","image":"proj_1776423069_2725.jpg","images":["extra_1776423069_6028_0.jpg","extra_1776423069_8234_1.jpg","extra_1776423069_5344_2.jpg","extra_1776423069_7496_3.jpg","extra_1776423069_6453_4.jpg"]},{"id":10,"title":"كاروسيل عن أداة مميزة","year":"2026","category":"كاروسيل","description":"","link":"https:\/\/t.me\/omardisiner\/510?single","image":"proj_1776423232_8320.jpg","images":["extra_1776423232_9124_0.jpg","extra_1776423232_6510_1.jpg","extra_1776423232_2591_2.jpg","extra_1776423232_1876_3.jpg","extra_1776423232_9552_4.jpg","extra_1776423232_7977_5.jpg","extra_1776423232_5130_6.jpg"]},{"id":11,"title":"كاروسيل عن اهم نصائح التصميم","year":"2026","category":"كاروسيل","description":"","link":"https:\/\/t.me\/omardisiner\/505?single","image":"proj_1776423375_1594.jpg","images":["extra_1776423375_4131_0.jpg","extra_1776423375_6723_1.jpg","extra_1776423375_7240_2.jpg","extra_1776423375_6726_3.jpg","extra_1776423375_4571_4.jpg"]},{"id":12,"title":"كاروسيل عن اهم نصائح السوشيال ميديا","year":"2026","category":"كاروسيل","description":"","link":"https:\/\/t.me\/omardisiner\/566?single","image":"proj_1776423464_7394.jpg","images":["extra_1776423464_3752_0.jpg","extra_1776423464_9583_1.jpg","extra_1776423464_4963_2.jpg","extra_1776423464_7249_3.jpg","extra_1776423464_5003_4.jpg"]},{"id":43,"title":"الهوية البصرية لكربّاوي","year":"2026","category":"هويات بصرية","description":"تصميمي للهوية البصرية الخاصة ب مطعم ( كربّاوي ) وهو مطعم وجبات سريعة مع استخدام ألوان وعناصر تناسب توجه المطعم الشبابي","link":"https:\/\/t.me\/omardisiner\/846","image":"proj_1789988665_5448.jpg","images":["extra_1789988665_8630_0.jpg","extra_1789988665_9896_1.jpg","extra_1789988665_5353_2.jpg","extra_1789988665_3182_3.jpg","extra_1789988665_4006_4.jpg","extra_1789988665_3314_5.jpg","extra_1789988665_8660_6.jpg","extra_1789988665_8236_7.jpg","extra_1789988665_4720_8.jpg"]},{"id":41,"title":"الهوية البصرية لزحل","year":"2026","category":"هويات بصرية","description":"جديدنا في تصميم الهويات البصرية \r\nتصميمي للهوية البصرية الخاصة ب ( زحل ) بالتعاون مع فريق زحل المبدع مع الاعتماد على عناصر وألوان واضحة تسهل العملية التعليمية \r\n \r\nOur latest in visual identity design \r\n My design for the visual identity of (Zuhal) in collaboration with the creative Zuhal team, relying on clear elements and colors that facilitate the learning process","link":"https:\/\/www.behance.net\/gallery\/253047731\/Zohal-visual-identity-brand-identity","image":"proj_1784619535_2293.png","images":["extra_1784619535_9585_0.png","extra_1784619535_1919_1.png","extra_1784619535_2875_2.png","extra_1784619535_7822_3.png","extra_1784619535_5343_4.png","extra_1784619535_7557_5.png","extra_1784619535_2422_6.png","extra_1784619535_2479_7.png","extra_1784619535_9879_8.png"]},{"id":13,"title":"هوية بصرية لمقهى فنجان","year":"2026","category":"هويات بصرية","description":"","link":"https:\/\/t.me\/omardisiner\/379?single","image":"proj_1776547988_5885.jpg","images":["extra_1776547988_3854_0.jpg","extra_1776547988_2342_1.jpg","extra_1776547988_7705_2.jpg","extra_1776547988_4740_3.jpg","extra_1776547988_3600_4.jpg","extra_1776547988_3914_5.jpg","extra_1776547988_2591_6.jpg","extra_1776547988_4089_7.jpg","extra_1776547988_4591_8.jpg","extra_1776547988_3732_9.jpg","extra_1776547988_1883_10.jpg","extra_1776547988_1167_11.jpg","extra_1776547988_5235_12.jpg","extra_1776547988_6877_13.jpg","extra_1776547988_6270_14.jpg","extra_1776547988_6337_15.jpg","extra_1776547988_1994_16.jpg","extra_1776547988_6110_17.jpg","extra_1776547988_5491_18.jpg"]},{"id":14,"title":"هوية بصرية لشركة زونيكس للملابس","year":"2026","category":"هويات بصرية","description":"","link":"https:\/\/t.me\/omardisiner\/348?single","image":"proj_1776548205_5322.jpg","images":["extra_1776548205_3151_0.jpg","extra_1776548205_4545_1.jpg","extra_1776548205_8417_2.jpg","extra_1776548205_7760_3.jpg","extra_1776548205_8610_4.jpg","extra_1776548205_5546_5.jpg","extra_1776548205_8981_6.jpg","extra_1776548205_5376_7.jpg","extra_1776548205_8374_8.jpg","extra_1776548205_1129_9.jpg","extra_1776548205_4749_10.jpg"]},{"id":31,"title":"حملة تسويقية لنهائي دوري ابطال اسيا للنادي الأهلي السعودي","year":"2026","category":"حملات تسويقية","description":"حملة \"الأهلي السعودي – نهائي النخبة الآسيوية\" هي حملة سوشيال ميديا متكاملة تهدف إلى إبراز رحلة الفريق نحو النهائي وتعزيز حماس الجماهير.\r\nتعتمد التصاميم على الهوية البصرية الخضراء القوية مع تكوينات ديناميكية تعكس قوة وعراقة نادي Al-Ahli Saudi FC.\r\nتغطي الحملة عدة جوانب مثل الإعلان عن المباراة، التشكيلة الرسمية، إبراز اللاعبين، والاحتفال بالإنجاز، لتقديم تجربة بصرية مترابطة.\r\nتركز الحملة على المشاعر والفخر والانتماء، بهدف تعزيز العلاقة بين النادي وجماهيره على منصات التواصل الاجتماعي.","link":"https:\/\/t.me\/omardisiner\/754?single","image":"proj_1777261645_1243.png","images":["extra_1777261645_8827_0.jpg","extra_1777261645_4599_1.jpg","extra_1777261645_6646_2.jpg","extra_1777261645_8121_3.jpg","extra_1777261645_4010_4.jpg","extra_1777261645_6447_5.jpg"]},{"id":1,"title":"حملة تسويقية لاطلاق مجموعة الهوت دوج","year":"2026","category":"حملات تسويقية","description":"حملة تسويقية متكاملة لمطعم \"ساندويتش تراك\" — تصاميم سوشيال ميديا تجذب العملاء وتعزز حضور العلامة التجارية 🔥🚀","link":"https:\/\/t.me\/omardisiner\/654?single","image":"proj_1776351285_2262.png","images":["extra_1776350913_5128_0.png","extra_1776350913_7133_1.png","extra_1776350913_1050_2.png","extra_1776350913_8874_3.png","extra_1776350913_4111_4.png","extra_1776350913_1436_5.png"]},{"id":19,"title":"اعلان مطعم برجر بأسلوب حيوي","year":"2026","category":"سوشيال ميديا","description":"","link":"https:\/\/t.me\/omardisiner\/302","image":"proj_1776565475_5534.jpg","images":["extra_1776565475_8145_0.jpg"]},{"id":5,"title":"بوستر اعلاني لحذاء رياضي","year":"2026","category":"سوشيال ميديا","description":"","link":"https:\/\/t.me\/omardisiner\/127","image":"proj_1776351690_1110.jpg","images":[]},{"id":7,"title":"تهنئة العيد لقناتي الشخصية","year":"2026","category":"تهنئات","description":"تصميم تهنئة العيد لقناتي الشخصية بالوان مميزة وتبعث البهجة و التفائل","link":"https:\/\/t.me\/omardisiner\/681","image":"proj_1776352666_9088.png","images":[]},{"id":34,"title":"تهنئة يوم العمال","year":"2026","category":"تهنئات","description":"أن تأتي متأخرًا خير من ألا تأتي 🎁 🧸\r\nتصميمي ليوم العمال يوم يهتم بتقدير كل من يقدم خدمة للمجتمع 🧢✅\r\n ومنهم المصممين الذين لا يكتمل جمال العالم بدون إبداعهم ⭐️❤️","link":"https:\/\/t.me\/omardisiner\/765","image":"proj_1779582595_8175.jpg","images":[]},{"id":23,"title":"شعار بطولة بأسلوب كرة القدم","year":"2026","category":"شعارات","description":"","link":"https:\/\/t.me\/omardisiner\/240?single","image":"proj_1776566190_7105.jpg","images":["extra_1776566190_6311_0.jpg","extra_1776566190_1316_1.jpg","extra_1776566190_8107_2.jpg"]},{"id":24,"title":"شعار شركة باسم رؤية الحدث","year":"2026","category":"شعارات","description":"","link":"https:\/\/t.me\/omardisiner\/280?single","image":"proj_1776643948_7522.jpg","images":[]},{"id":2,"title":"حملة تسويقية لاطلاق مشروب الماتشا","year":"2026","category":"حملات تسويقية","description":"بعض مشاركاتي في الحملة التسويقية لإحدى المقاهي ☕🎨\r\n لإطلاق مجموعتهم الجديدة من منتجات الماتشا 🍃","link":"https:\/\/t.me\/omardisiner\/649?single","image":"proj_1776351211_1390.png","images":["extra_1776351037_2584_0.png","extra_1776351037_9051_1.png","extra_1776351037_7496_2.png","extra_1776351037_6692_3.png"]},{"id":26,"title":"كاروسيل مسابقة رمضانية","year":"2026","category":"كاروسيل","description":"","link":"https:\/\/t.me\/omardisiner\/741?single","image":"proj_1776794342_8278.jpg","images":["extra_1776794342_1160_0.jpg","extra_1776794342_5049_1.jpg","extra_1776794342_6032_2.jpg","extra_1776794342_1696_3.jpg"]},{"id":27,"title":"كاروسيل نصائح لترتيب حسابات المصممين","year":"2026","category":"كاروسيل","description":"4 نصائح لترتيب حساب TikTok بشكل احترافي \r\nيساعدك على عرض محتواك بطريقة أفضل 🚀📱","link":"https:\/\/t.me\/omardisiner\/634?single","image":"proj_1776794635_4193.jpg","images":["extra_1776794635_5091_0.jpg","extra_1776794635_8260_1.jpg","extra_1776794635_2049_2.jpg","extra_1776794635_3397_3.jpg","extra_1776794635_4813_4.jpg"]},{"id":17,"title":"مجموعة منشورات عن يوم التأسيس السعودي","year":"2026","category":"حملات تسويقية","description":"","link":"https:\/\/t.me\/omardisiner\/671?single","image":"proj_1776565186_4781.jpg","images":["extra_1776565186_5433_0.jpg","extra_1776565186_1124_1.jpg","extra_1776565186_2077_2.jpg","extra_1776565186_6214_3.jpg","extra_1776565186_8327_4.jpg"]},{"id":20,"title":"بوستر بطولة تصميم رمضانية","year":"2026","category":"سوشيال ميديا","description":"","link":"https:\/\/t.me\/omardisiner\/432","image":"proj_1776801586_5941.jpg","images":[]},{"id":30,"title":"تصميم سوشيال ميديا لشركة كارسير","year":"2026","category":"سوشيال ميديا","description":"","link":"https:\/\/t.me\/omardisiner\/306","image":"proj_1776801785_2376.jpg","images":[]},{"id":18,"title":"حمله تسويقية عن دورات الذكاء الاصطناعي","year":"2026","category":"حملات تسويقية","description":"","link":"https:\/\/t.me\/omardisiner\/450?single","image":"proj_1776565263_8296.jpg","images":["extra_1776565263_7636_0.jpg","extra_1776565263_5364_1.jpg","extra_1776565263_2467_2.jpg","extra_1776565263_4279_3.jpg","extra_1776565263_4757_4.jpg"]},{"id":32,"title":"شعار عمر شيخ الدار","year":"2026","category":"شعارات","description":"أعمالي في تصميم الشعارات ©\r\nجديد تصميمي لشعار المبدع عمر شيخ الدار اعتمدت على حرفي ال M و R  مع وضع نقطة لتدل على حرف ال I من كلمة شيخ","link":"https:\/\/t.me\/omardisiner\/771?single","image":"proj_1779582466_8196.jpg","images":["extra_1779582466_5914_0.jpg"]},{"id":35,"title":"تصميم يوم الجمعة","year":"2026","category":"تهنئات","description":"\"إِنَّ اللَّهَ وَمَلائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا\r\n صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا\" \r\nجمعتكم مباركة ❤️⭐️","link":"https:\/\/t.me\/omardisiner\/764","image":"proj_1779582643_2840.jpg","images":[]},{"id":33,"title":"تهنئة اليوم العالمي للمصممين","year":"2026","category":"تهنئات","description":"كل عام والمبدعين بخير 🔥👑\r\nتصميم بسيط خفيف لليوم العالمي للتصميم نتكلم فيه عن مفهوم التصميم الجيرافيكي مع بعض إحصائياتي وإنجازاتي ❤️‍🔥✅","link":"https:\/\/t.me\/omardisiner\/762?single","image":"proj_1779582537_6396.jpg","images":[]},{"id":21,"title":"تهنئة العيد لشركة المنصف في القدرات","year":"2026","category":"تهنئات","description":"","link":"https:\/\/t.me\/omardisiner\/689?single","image":"proj_1776565959_7109.jpg","images":["extra_1776565959_3794_0.jpg"]},{"id":36,"title":"تصميم مباراة الكلاسيكو","year":"2026","category":"سوشيال ميديا","description":"لا حاجة لوصف الصورة تتحدث عن نفسها 👌😍\r\nتصميمي لمباراة الكلاسيكو ريال مدريد ضد برشلونة كبرشلوني ⚽️⚽️\r\nالتصميم يعتمد على إبراز احد اهم لاعبين برشلونة مع تعريف بالمباراة ✴️","link":"https:\/\/t.me\/omardisiner\/775","image":"proj_1779582709_9124.jpg","images":[]},{"id":25,"title":"حملة تسويقية لشركة إبداعية","year":"2026","category":"حملات تسويقية","description":"","link":"https:\/\/t.me\/omardisiner\/454?single","image":"proj_1776792536_5270.jpg","images":["extra_1776792435_6363_0.jpg","extra_1776792436_4417_1.jpg","extra_1776792436_9142_2.jpg","extra_1776792436_9330_3.png","extra_1776792536_6893_0.jpg","extra_1776792536_4203_1.jpg","extra_1776792536_8138_2.jpg","extra_1776792536_9212_3.jpg"]},{"id":38,"title":"تصميم بوستر مسابقة","year":"2026","category":"سوشيال ميديا","description":"جديد آخر تصاميمي وتعاوناتي 👑🎮\r\nتصميم جديد لمسابقة حقيبة المصمم ومتجر القناص اعتمدت في التصميم على هوية وألوان متجر القناص مع الأسلوب الزجاجي في التصميم 💎⭐️","link":"https:\/\/t.me\/omardisiner\/780","image":"proj_1779583009_7982.jpg","images":[]},{"id":22,"title":"تهنئة رمضان لقناتي الشخصية","year":"2026","category":"تهنئات","description":"","link":"https:\/\/t.me\/omardisiner\/435","image":"proj_1776566029_9884.jpg","images":["extra_1776566029_2196_0.jpg"]},{"id":15,"title":"هوية بصرية لشركة تكنولوجيا","year":"2026","category":"هويات بصرية","description":"","link":"https:\/\/t.me\/omardisiner\/413?single","image":"proj_1776563954_9104.jpg","images":["extra_1776563954_9901_0.jpg","extra_1776563954_5426_1.jpg","extra_1776563954_6041_2.jpg","extra_1776563954_4822_3.jpg","extra_1776563954_6214_4.jpg","extra_1776563954_1191_5.jpg","extra_1776563954_9999_6.jpg","extra_1776563954_8165_7.jpg","extra_1776563954_3622_8.jpg"]},{"id":42,"title":"تصميم شعار زحل","year":"2026","category":"شعارات","description":"تصميمي لشعار زحل بالتعاون مع فريق زحل","link":"","image":"proj_1788695837_1761.png","images":[]},{"id":16,"title":"هوية بصرية لمقهى غصن","year":"2026","category":"هويات بصرية","description":"","link":"https:\/\/t.me\/omardisiner\/267?single","image":"proj_1776564037_9337.jpg","images":["extra_1776564037_6792_0.jpg","extra_1776564037_7302_1.jpg","extra_1776564037_7400_2.jpg","extra_1776564037_2337_3.jpg","extra_1776564037_6743_4.jpg"]},{"id":28,"title":"حملة تسويقية لمسابقة تعليمية","year":"2026","category":"حملات تسويقية","description":"","link":"https:\/\/t.me\/omardisiner\/243?single","image":"proj_1776800873_4311.jpg","images":["extra_1776800873_1556_0.jpg","extra_1776800873_8357_1.jpg","extra_1776800873_9005_2.jpg","extra_1776800873_3450_3.jpg","extra_1776800873_2214_4.jpg"]},{"id":37,"title":"تصميم حملة تسويقية لمتجر منتجات","year":"2026","category":"حملات تسويقية","description":"آخر أعمالي في الحملات التسويقية 📱\r\nآخر تصاميمي لمتجر سهلة لإحدى سماعات المتجر اعتمدت في التصميم على أسلوب البساطة مع استخدام ألوان المتجر الأزرق والأبيض ✔️©","link":"https:\/\/t.me\/omardisiner\/783?single","image":"proj_1779582939_7125.jpg","images":["extra_1779582939_2417_0.jpg"]}];
+const allCategories = ["حملات تسويقية","سوشيال ميديا","هويات بصرية","شعارات","كاروسيل","تهنئات"];
+let currentPage = 'home';
+let currentCategory = allCategories[0] || '';
+let isDark = true;
+
+// ─── THEME ───
+function toggleTheme() {
+  isDark = !isDark;
+  document.getElementById('body').classList.toggle('light', !isDark);
+  document.getElementById('sunIcon').style.display = isDark ? '' : 'none';
+  document.getElementById('moonIcon').style.display = isDark ? 'none' : '';
+}
+
+// ─── PAGES ───
+function showPage(name) {
+  const target = document.getElementById('page-' + name);
+  document.querySelectorAll('.page').forEach(p => {
+    if (p !== target) p.classList.remove('active');
+  });
+  target.classList.remove('active');
+  void target.offsetWidth; // restart animation
+  target.classList.add('active');
+  currentPage = name;
+  document.getElementById('menuBtn').style.display = name === 'home' ? '' : 'none';
+  document.getElementById('backBtn').style.display = name !== 'home' ? '' : 'none';
+  const footer = document.querySelector('.site-footer');
+  if (footer) footer.style.display = name === 'home' ? '' : 'none';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function goBack() {
+  if (currentPage === 'detail') showPage('projects');
+  else showPage('home');
+}
+
+// ─── MENU ───
+function openMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+function scrollToSection(id) {
+  if (currentPage !== 'home') {
+    showPage('home');
+    setTimeout(() => document.getElementById(id)?.scrollIntoView({behavior:'smooth'}), 120);
+  } else {
+    document.getElementById(id)?.scrollIntoView({behavior:'smooth'});
+  }
+}
+
+// ─── PROJECTS ───
+function showProjects(cat) {
+  currentCategory = cat;
+  document.getElementById('projects-title').textContent = cat;
+  renderProjects(cat);
+  showPage('projects');
+  updatePills(cat);
+}
+
+function filterProjects(cat) {
+  currentCategory = cat;
+  document.getElementById('projects-title').textContent = cat;
+  renderProjects(cat);
+  updatePills(cat);
+}
+
+function updatePills(active) {
+  document.querySelectorAll('#filterPills .pill').forEach(p => {
+    p.classList.toggle('active', p.textContent.trim() === active);
+  });
+}
+
+function renderProjects(cat) {
+  const list = document.getElementById('projectsList');
+  const filtered = allProjects.filter(p => p.category === cat);
+  document.getElementById('projects-count').textContent = filtered.length + ' مشاريع';
+  if (filtered.length === 0) {
+    list.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
+      <i class="fa-regular fa-folder-open" style="font-size:4.5rem"></i>
+      <p>لا يوجد مشاريع بعد</p>
+    </div>`;
+    return;
+  }
+  list.innerHTML = filtered.map(p => `
+    <div class="project-card">
+      <div class="project-thumb" onclick="showDetail(${p.id})">
+        ${p.image ? `<img src="/uploads/projects/${p.image}" alt="${esc(p.title)}">` : `<div class="thumb-placeholder"><i class="fa-regular fa-image" style="font-size:2.75rem;color:rgba(236,72,153,0.6)"></i></div>`}
+      </div>
+      <div class="project-info">
+        <div>
+          <div class="project-title">${esc(p.title)}</div>
+          <div class="project-cat">${esc(p.category)}</div>
+        </div>
+        <div class="project-meta">
+          <span class="project-year">${esc(p.year)}</span>
+        </div>
+      </div>
+      <div class="project-actions">
+        <button class="btn-view-detail" onclick="showDetail(${p.id})">
+          <i class="fa-regular fa-eye"></i>
+          عرض التفاصيل
+        </button>
+        ${p.link ? `<a class="btn-open-link" href="${esc(p.link)}" target="_blank" rel="noopener" title="فتح الرابط">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>` : ''}
+      </div>
+    </div>`).join('');
+}
+
+let sliderIndex = 0;
+let sliderImages = [];
+
+function showDetail(id) {
+  const p = allProjects.find(x => x.id == id);
+  if (!p) return;
+
+  sliderImages = [];
+  if (p.image) sliderImages.push(p.image);
+  if (p.images && p.images.length) sliderImages = sliderImages.concat(p.images);
+  sliderIndex = 0;
+
+  const slidesEl = document.getElementById('detailSlides');
+  const dotsEl = document.getElementById('sliderDots');
+  const prevBtn = document.getElementById('sliderPrev');
+  const nextBtn = document.getElementById('sliderNext');
+
+  if (sliderImages.length === 0) {
+    slidesEl.innerHTML = `<div class="slide"><div class="detail-placeholder"><i class="fa-regular fa-image" style="font-size:3.5rem;color:rgba(236,72,153,0.5)"></i></div></div>`;
+    dotsEl.innerHTML = '';
+    prevBtn.style.display = 'none';
+    nextBtn.style.display = 'none';
+  } else {
+    slidesEl.innerHTML = sliderImages.map(img =>
+      `<div class="slide"><img src="/uploads/projects/${img}" alt="${esc(p.title)}"></div>`
+    ).join('');
+    slidesEl.style.transform = 'translateX(0)';
+    dotsEl.innerHTML = sliderImages.map((_, i) =>
+      `<button class="slider-dot ${i===0?'active':''}" onclick="slideTo(${i})"></button>`
+    ).join('');
+    const showNav = sliderImages.length > 1;
+    prevBtn.style.display = showNav ? 'flex' : 'none';
+    nextBtn.style.display = showNav ? 'flex' : 'none';
+  }
+
+  document.getElementById('detailTitle').textContent = p.title;
+  document.getElementById('detailYear').textContent = p.year;
+  document.getElementById('detailCat').textContent = p.category;
+  document.getElementById('detailDesc').textContent = p.description;
+  showPage('detail');
+}
+
+function slideTo(i) {
+  sliderIndex = i;
+  document.getElementById('detailSlides').style.transform = `translateX(${i * 100}%)`;
+  document.querySelectorAll('.slider-dot').forEach((d, idx) => d.classList.toggle('active', idx === i));
+}
+
+function slideMove(dir) {
+  const total = sliderImages.length;
+  sliderIndex = (sliderIndex - dir + total) % total;
+  slideTo(sliderIndex);
+}
+
+function esc(str) {
+  const d = document.createElement('div');
+  d.textContent = str || '';
+  return d.innerHTML;
+}
+
+// ─── SCROLL REVEAL ───
+(function(){
+  const items = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+  if (!items.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  items.forEach(el => io.observe(el));
+})();
+
+// ─── PROGRESS BARS ANIMATE ON SCROLL ───
+(function(){
+  const fills = document.querySelectorAll('.progress-fill[data-width]');
+  if (!fills.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.width = e.target.dataset.width + '%';
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  fills.forEach(el => io.observe(el));
+})();
+
+// ─── INFINITE MARQUEE ───
+(function(){
+  function initMarquee(el, dir) {
+    if (!el || !el.children.length) return;
+
+    // احفظ الكروت الأصلية
+    var originals = Array.from(el.children);
+
+    // كرر الكروت 8 مرات لضمان infinite بدون فراغ في أي شاشة
+    var COPIES = 8;
+    for (var i = 0; i < COPIES; i++) {
+      originals.forEach(function(c) {
+        el.appendChild(c.cloneNode(true));
+      });
+    }
+
+    function applySize() {
+      var totalSets = COPIES + 1;
+      var oneSetW = el.scrollWidth / totalSets;
+      var dur = Math.min(80, Math.max(20, Math.round(oneSetW / 80)));
+      el.style.setProperty('--set-w', (dir === 'rev' ? '' : '-') + oneSetW + 'px');
+      el.style.setProperty('--marquee-dur', dur + 's');
+      if (!el.classList.contains('is-fwd') && !el.classList.contains('is-rev')) {
+        el.classList.add(dir === 'rev' ? 'is-rev' : 'is-fwd');
+      }
+    }
+
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        applySize();
+        if (window.ResizeObserver) {
+          new ResizeObserver(applySize).observe(el.parentElement);
+        }
+      });
+    });
+  }
+
+  function start() {
+    initMarquee(document.getElementById('testimonialsTrack'), 'rev');
+    initMarquee(document.getElementById('clientsTrack'),      'rev');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();
+
+// ─── BLOBS ON SCROLL ───
+(function(){
+  const b1=document.getElementById('blob1'),b2=document.getElementById('blob2'),b3=document.getElementById('blob3');
+  window.addEventListener('scroll',function(){
+    const max=document.documentElement.scrollHeight-window.innerHeight;
+    const p=max>0?Math.min(window.scrollY/max,1):0;
+    if(b1)b1.style.transform=`rotate(${p*360}deg)`;
+    if(b2)b2.style.transform=`rotate(${p*-540}deg)`;
+    if(b3)b3.style.transform=`rotate(${p*270}deg)`;
+  },{passive:true});
+})();
+
+// ─── INIT PAGE STATE ───
+(function(){
+  function initPage() { showPage('home'); }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPage);
+  } else {
+    initPage();
+  }
+})();
+
+// Desktop navbar active-section animation
+(function(){
+  const links=[...document.querySelectorAll('.desktop-nav .nav-link')];
+  if(!links.length) return;
+  const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  const sections=[...map.keys()].map(id=>document.getElementById(id)).filter(Boolean);
+  const setActive=id=>links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{ if(entry.isIntersecting) setActive(entry.target.id); });
+  },{rootMargin:'-35% 0px -55% 0px',threshold:0});
+  sections.forEach(s=>observer.observe(s));
+})();
+</script>
+
+<style>
+.site-footer{background:#000;margin-top:4rem;border-top:1px solid rgba(255,255,255,0.07);display:block;width:100%;position:relative;z-index:30}
+body.light .site-footer{background:#111;border-top:1px solid rgba(255,255,255,0.1)}
+.footer-inner{width:100%;padding:3rem 2rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;box-sizing:border-box}
+.footer-brand{display:flex;flex-direction:column;gap:.6rem}
+.footer-name{font-size:1.8rem;font-weight:700;color:#ec4899}
+.footer-desc{font-size:1.05rem;color:rgba(255,255,255,0.5)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);text-align:center;padding:1.2rem 2rem;font-size:.9rem;color:rgba(255,255,255,0.3)}
+.footer-dev{color:#ec4899;text-decoration:underline;font-weight:600;transition:color .2s}
+.footer-dev:hover{color:#f472b6}
+.footer-socials{display:flex;align-items:center;gap:.75rem}
+.footer-social-btn{position:relative;width:2.75rem;height:2.75rem;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--sc,#ec4899);background:color-mix(in srgb,var(--sc,#ec4899) 12%,transparent);border:1px solid color-mix(in srgb,var(--sc,#ec4899) 30%,transparent);transition:transform .3s cubic-bezier(.34,1.56,.64,1),background .3s,border-color .3s,box-shadow .3s;overflow:hidden}
+.footer-social-btn:hover{transform:translateY(-4px) scale(1.12);background:color-mix(in srgb,var(--sc,#ec4899) 22%,transparent);border-color:color-mix(in srgb,var(--sc,#ec4899) 60%,transparent);box-shadow:0 8px 24px color-mix(in srgb,var(--sc,#ec4899) 35%,transparent)}
+.footer-social-icon{position:relative;z-index:1;display:flex;align-items:center;justify-content:center}
+.footer-social-icon svg{width:1.2rem;height:1.2rem}
+.footer-social-icon i{font-size:1.2rem;line-height:1}
+.footer-social-ripple{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--sc,#ec4899) 40%,transparent) 0%,transparent 70%);opacity:0;transform:scale(0);transition:opacity .4s,transform .4s}
+.footer-social-btn:hover .footer-social-ripple{opacity:1;transform:scale(1)}
+@media(max-width:640px){
+  .footer-inner{flex-direction:column;align-items:center;text-align:center;padding:2.5rem 1.5rem 2rem}
+  .footer-brand{align-items:center}
+  .footer-socials{justify-content:center}
+}
+</style>
+
+
+</body></html>

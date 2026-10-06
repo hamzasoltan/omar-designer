@@ -145,8 +145,8 @@ body.light .progress-track{background:rgba(0,0,0,.1)}
 .tool-viz-card:hover{transform:translateY(-4px);border-color:rgba(236,72,153,.38);background:rgba(255,255,255,.045)}
 .tool-viz-card::before{content:"";position:absolute;inset:auto -25% -55%;height:80%;background:radial-gradient(circle,rgba(236,72,153,.1),transparent 68%);pointer-events:none}
 .pie-stage{position:relative;width:min(100%,170px);height:135px;margin:.05rem auto .55rem;perspective:900px}
-.pie-3d{position:absolute;left:8%;right:8%;top:8%;height:78%;transform:rotateX(58deg);transform-style:preserve-3d}
-.pie-depth,.pie-face{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from -90deg,var(--tool-color) 0 calc(var(--value) * 1%),rgba(255,255,255,.065) calc(var(--value) * 1%) 100%)}
+.pie-3d{position:absolute;left:8%;right:8%;top:8%;height:78%;transform:rotateX(58deg) rotateZ(var(--spin,0deg));transform-style:preserve-3d;will-change:transform}
+.pie-depth,.pie-face{position:absolute;inset:0;border-radius:50%;background:conic-gradient(from -90deg,var(--tool-color) 0 calc(var(--progress, var(--value)) * 1%),rgba(255,255,255,.065) calc(var(--progress, var(--value)) * 1%) 100%)}
 .pie-depth{transform:translateY(13px);filter:brightness(.42) saturate(.85);opacity:.95}
 .pie-depth::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(to bottom,transparent 48%,rgba(0,0,0,.24) 100%);mix-blend-mode:multiply}
 .pie-face{box-shadow:0 7px 18px rgba(0,0,0,.35),0 0 24px color-mix(in srgb,var(--tool-color) 18%,transparent);animation:pieIn .9s cubic-bezier(.16,1,.3,1) both}
@@ -1483,6 +1483,50 @@ function esc(str) {
     });
   }, { threshold: 0.3 });
   fills.forEach(el => io.observe(el));
+})();
+
+// ─── TOOLS PIE REVEAL ───
+(function(){
+  const cards = document.querySelectorAll('.tool-viz-card');
+  const section = document.getElementById('stats-section');
+  if (!cards.length || !section) return;
+  let played = false;
+  const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function animateTools(){
+    if (played) return;
+    played = true;
+    cards.forEach(card => {
+      const value = Math.max(0, Math.min(100, Number(card.style.getPropertyValue('--value')) || 0));
+      const pie = card.querySelector('.pie-3d');
+      if (!pie) return;
+      if (reduced) {
+        card.style.setProperty('--progress', value);
+        pie.style.setProperty('--spin', (value * 3.6) + 'deg');
+        return;
+      }
+      const start = performance.now();
+      const duration = 1900;
+      function frame(now){
+        const t = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - t, 3);
+        const progress = value * eased;
+        const spin = (720 + value * 3.6) * eased;
+        card.style.setProperty('--progress', progress.toFixed(2));
+        pie.style.setProperty('--spin', spin.toFixed(2) + 'deg');
+        if (t < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    });
+  }
+
+  const io = new IntersectionObserver(entries => {
+    if (entries.some(entry => entry.isIntersecting)) {
+      animateTools();
+      io.disconnect();
+    }
+  }, { threshold: 0.28 });
+  io.observe(section);
 })();
 
 // ─── INFINITE MARQUEE ───

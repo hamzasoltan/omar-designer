@@ -176,16 +176,28 @@ body.light .progress-track{background:rgba(0,0,0,.1)}
 @media(max-width:520px){.tools-visual-grid{gap:.7rem}.tool-viz-card{padding:.8rem .45rem}.pie-stage{max-width:150px}.tool-viz-name{font-size:.78rem}.tools-legend{gap:.5rem .7rem}}
 @media(prefers-reduced-motion:reduce){.pie-face{animation:none}}
 
-/* Works */
-.works-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:42rem;margin:0 auto 5rem;width:100%}
-@media(min-width:640px){.works-grid{grid-template-columns:1fr 1fr}}
-.cat-btn{border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.2);border-radius:1.5rem;padding:2.25rem 1rem;font-size:1.2rem;font-weight:500;cursor:pointer;color:var(--fg);transition:transform .4s cubic-bezier(.34,1.56,.64,1),border-color .4s,color .4s,box-shadow .4s;backdrop-filter:blur(10px);text-align:center;width:100%;display:flex;align-items:center;justify-content:center;gap:.75rem}
-body.light .cat-btn{border-color:rgba(0,0,0,.2);background:rgba(255,255,255,.2)}
-.cat-btn:hover{transform:scale(1.04) translateY(-4px);border-color:rgba(236,72,153,.5);color:var(--pink);box-shadow:0 14px 32px rgba(236,72,153,.16)}
-.cat-btn:active{transform:scale(.97)}
-.cat-btn .cat-icon{width:2rem;height:2rem;flex-shrink:0;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
-.cat-btn:hover .cat-icon{transform:scale(1.15) rotate(8deg)}
-.cat-btn .cat-icon svg,.cat-btn .cat-icon i{width:100%;height:100%;font-size:2rem;display:flex;align-items:center;justify-content:center}
+/* Works — floating category cards inspired by the reference infographic */
+.works-grid{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.75rem 1.25rem;max-width:76rem;margin:0 auto 5rem;width:100%;padding:2.5rem .25rem 1rem}
+.works-grid:before,.works-grid:after{content:"";position:absolute;pointer-events:none;filter:blur(42px);border-radius:999px;z-index:-1}
+.works-grid:before{width:240px;height:150px;top:-15px;right:2%;background:radial-gradient(circle,rgba(236,72,153,.34),transparent 68%)}
+.works-grid:after{width:220px;height:140px;bottom:0;left:4%;background:radial-gradient(circle,rgba(124,58,237,.22),transparent 70%)}
+.cat-btn{position:relative;isolation:isolate;min-height:225px;border:1px solid rgba(255,255,255,.2);background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.035) 55%,rgba(255,255,255,.02));border-radius:1rem;padding:3.4rem 1.25rem 1.35rem;font-size:1.12rem;font-weight:600;cursor:pointer;color:var(--fg);transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .45s,background .45s;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);text-align:center;width:100%;display:flex;align-items:center;justify-content:center;gap:.75rem;overflow:visible}
+.cat-btn:before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.06),transparent 35%);opacity:.7;pointer-events:none}
+.cat-btn:after{content:"";position:absolute;inset:auto 10% -1px;height:1px;background:linear-gradient(90deg,transparent,rgba(236,72,153,.85),transparent);opacity:.7;transition:opacity .35s,transform .35s;transform:scaleX(.6)}
+body.light .cat-btn{border-color:rgba(0,0,0,.15);background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(255,255,255,.42))}
+.cat-btn:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.42);background:linear-gradient(145deg,rgba(236,72,153,.15),rgba(255,255,255,.045));box-shadow:0 24px 50px rgba(0,0,0,.28),0 0 34px rgba(236,72,153,.12)}
+.cat-btn:hover:after{opacity:1;transform:scaleX(1)}
+.cat-btn:active{transform:translateY(-3px) scale(.99)}
+.cat-btn .cat-index{position:absolute;top:-1.05rem;left:50%;transform:translateX(-50%);width:4.15rem;height:4.15rem;border-radius:50%;display:grid;place-items:center;z-index:3;font-size:1.05rem;font-weight:800;letter-spacing:.02em;color:#fff;background:radial-gradient(circle at 38% 30%,rgba(255,255,255,.22),rgba(236,72,153,.5) 45%,rgba(67,12,52,.9) 100%);border:1px solid rgba(255,255,255,.45);box-shadow:0 8px 28px rgba(236,72,153,.28),inset 0 0 18px rgba(255,255,255,.08);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+.cat-btn:hover .cat-index{transform:translateX(-50%) translateY(-4px) scale(1.08);box-shadow:0 12px 34px rgba(236,72,153,.4),inset 0 0 22px rgba(255,255,255,.12)}
+.cat-btn .cat-index:after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid rgba(236,72,153,.2);opacity:.8}
+.cat-btn .cat-icon{width:3.2rem;height:3.2rem;display:grid;place-items:center;flex-shrink:0;color:var(--pink);background:rgba(236,72,153,.10);border:1px solid rgba(236,72,153,.18);border-radius:.9rem;transition:transform .45s cubic-bezier(.2,.8,.2,1),background .35s,box-shadow .35s}
+.cat-btn:hover .cat-icon{transform:translateY(-3px) scale(1.08);background:rgba(236,72,153,.16);box-shadow:0 10px 26px rgba(236,72,153,.16)}
+.cat-btn .cat-icon svg,.cat-btn .cat-icon i{width:1.55rem;height:1.55rem;font-size:1.55rem;line-height:1;display:grid;place-items:center}
+.cat-btn .cat-label{position:relative;z-index:1}
+@media(max-width:1000px){.works-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:50rem}}
+@media(max-width:560px){.works-grid{grid-template-columns:1fr;gap:1.8rem;max-width:23rem;padding-top:2.3rem}.cat-btn{min-height:190px;padding-top:3rem}.cat-btn .cat-index{width:3.7rem;height:3.7rem;font-size:.95rem}}
+@media(prefers-reduced-motion:reduce){.cat-btn,.cat-btn .cat-index,.cat-btn .cat-icon{transition:none}}
 /* Social */
 .social-section-wrap{display:grid;grid-template-columns:1fr;gap:3rem}
 @media(min-width:768px){.social-section-wrap{grid-template-columns:1fr 1fr}}
@@ -985,8 +997,7 @@ body.light{
         <div>
           <div class="srv-title">تصميم حملات تسويقية</div>
                     <div class="srv-desc" style="margin-top:.4rem">تصميم حملات تسويقية فعّالة تزيد الانتشار وتعزز التأثير</div>
-                  </div>
-      </div>
+                  </div>      </div>
             <div class="srv-card reveal stagger-6 visible">
         <div class="srv-icon">
           <i class="bi bi-envelope-open"></i>
@@ -997,7 +1008,8 @@ body.light{
                   </div>
       </div>
           </div>
-  </section>  
+  </section>
+  
   <!-- Stats / Performance Diagram -->
   <section id="stats-section">
     <div class="section-eyebrow">02 / الخبرة</div>
@@ -1072,19 +1084,25 @@ body.light{
   <section id="work-section">
     <div class="section-eyebrow">03 / Selected Work</div><h2 class="reveal visible">مشاريع صنعت<br><span>فرقًا بصريًا.</span></h2>
     <div class="works-grid">
-            <button class="cat-btn reveal stagger-1 visible" onclick="showProjects('حملات تسويقية')">
-        <span class="cat-icon"><i class="bi bi-megaphone"></i></span>        حملات تسويقية      </button>
-            <button class="cat-btn reveal stagger-2 visible" onclick="showProjects('سوشيال ميديا')">
-        <span class="cat-icon"><i class="bi bi-stars"></i></span>        سوشيال ميديا      </button>
-            <button class="cat-btn reveal stagger-3 visible" onclick="showProjects('هويات بصرية')">
-        <span class="cat-icon"><i class="bi bi-layers"></i></span>        هويات بصرية      </button>
-            <button class="cat-btn reveal stagger-4 visible" onclick="showProjects('شعارات')">
-        <span class="cat-icon"><i class="bi bi-pen"></i></span>        شعارات      </button>
-            <button class="cat-btn reveal stagger-5 visible" onclick="showProjects('كاروسيل')">
-        <span class="cat-icon"><i class="bi bi-grid-3x3-gap"></i></span>        كاروسيل      </button>
-            <button class="cat-btn reveal stagger-6 visible" onclick="showProjects('تهنئات')">
-        <span class="cat-icon"><i class="bi bi-gift"></i></span>        تهنئات      </button>
-          </div>
+      <button class="cat-btn reveal stagger-1 visible" onclick="showProjects('حملات تسويقية')">
+        <span class="cat-index">01</span><span class="cat-icon"><i class="bi bi-megaphone"></i></span><span class="cat-label">حملات تسويقية</span>
+      </button>
+      <button class="cat-btn reveal stagger-2 visible" onclick="showProjects('سوشيال ميديا')">
+        <span class="cat-index">02</span><span class="cat-icon"><i class="bi bi-stars"></i></span><span class="cat-label">سوشيال ميديا</span>
+      </button>
+      <button class="cat-btn reveal stagger-3 visible" onclick="showProjects('هويات بصرية')">
+        <span class="cat-index">03</span><span class="cat-icon"><i class="bi bi-layers"></i></span><span class="cat-label">هويات بصرية</span>
+      </button>
+      <button class="cat-btn reveal stagger-4 visible" onclick="showProjects('شعارات')">
+        <span class="cat-index">04</span><span class="cat-icon"><i class="bi bi-pen"></i></span><span class="cat-label">شعارات</span>
+      </button>
+      <button class="cat-btn reveal stagger-5 visible" onclick="showProjects('كاروسيل')">
+        <span class="cat-index">05</span><span class="cat-icon"><i class="bi bi-grid-3x3-gap"></i></span><span class="cat-label">كاروسيل</span>
+      </button>
+      <button class="cat-btn reveal stagger-6 visible" onclick="showProjects('تهنئات')">
+        <span class="cat-index">06</span><span class="cat-icon"><i class="bi bi-gift"></i></span><span class="cat-label">تهنئات</span>
+      </button>
+    </div>
   </section>
 
   <!-- Testimonials & Clients -->

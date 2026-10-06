@@ -1350,6 +1350,95 @@ body.light{
   }
 }
 </style>
+<style id="codek-hero-final">
+/* HERO — typography */
+.hero-text{
+  max-width:620px!important;
+}
+.hero h1{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:0!important;
+  width:max-content!important;
+  max-width:100%!important;
+  font-size:clamp(4.6rem,7vw,6.5rem)!important;
+  line-height:.88!important;
+  letter-spacing:-.075em!important;
+  margin:0 0 28px!important;
+}
+.hero h1 span,
+.hero h1 em{
+  display:block!important;
+  white-space:nowrap!important;
+}
+.hero h1 em{
+  font-style:normal!important;
+  color:transparent!important;
+  background:linear-gradient(100deg,#ff9ed0 0%,#ff4ba4 48%,#ff2d8f 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+}
+.hero-title-last{
+  color:#f7f4f6!important;
+}
+.hero p{
+  max-width:560px!important;
+  font-size:1.08rem!important;
+  line-height:1.9!important;
+}
+
+/* HERO LOGO — smooth 3 second entrance */
+.hero-img{
+  animation:heroLogoEntrance 3s cubic-bezier(.16,1,.3,1) both!important;
+  will-change:transform,opacity,filter!important;
+}
+.hero-img-placeholder{
+  overflow:visible!important;
+}
+.hero-img-placeholder img{
+  border-radius:32px!important;
+}
+@keyframes heroLogoEntrance{
+  0%{
+    opacity:0;
+    transform:translate3d(0,28px,0) scale(.84) rotate(-8deg);
+    filter:blur(10px);
+  }
+  45%{
+    opacity:.72;
+    transform:translate3d(0,8px,0) scale(.94) rotate(-3deg);
+    filter:blur(3px);
+  }
+  78%{
+    opacity:.96;
+    transform:translate3d(0,-2px,0) scale(1.015) rotate(.8deg);
+    filter:blur(.5px);
+  }
+  100%{
+    opacity:1;
+    transform:translate3d(0,0,0) scale(1) rotate(3deg);
+    filter:blur(0);
+  }
+}
+@media(max-width:767px){
+  .hero h1{
+    width:100%!important;
+    align-items:center!important;
+    text-align:center!important;
+    font-size:clamp(3.6rem,15vw,5rem)!important;
+  }
+  .hero p{
+    max-width:34rem!important;
+    text-align:center!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-img{
+    animation:none!important;
+  }
+}
+</style>
 </head>
 <body id="body" class="">
 <div id="bg-radial"></div>
@@ -1412,7 +1501,12 @@ body.light{
   <div class="hero reveal visible" id="home-section">
     <div class="hero-text" style="order:2">
       <div class="hero-kicker"><span></span> متاح لمشاريع جديدة</div>
-      <h1>أحوّل الفكرة<br><em>إلى هوية تُرى.</em></h1>
+      <h1>
+  <span>أحوّل</span>
+  <span>الفكرة</span>
+  <em>إلى هوية</em>
+  <span class="hero-title-last">تُرى.</span>
+</h1>
       <p>أنا عمر، مصمم محتوى بصري أبني شعارات وهويات وحملات تجعل العلامات أكثر وضوحًا، حضورًا، وقابلية للتذكّر.</p>
       <div class="hero-actions">
         <button class="hero-cta hero-cta-primary" onclick="scrollToSection('work-section')">

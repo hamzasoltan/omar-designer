@@ -130,6 +130,37 @@ body.light .progress-track{background:rgba(0,0,0,.1)}
 .stat-items{display:flex;flex-direction:column;gap:1.25rem}
 .stat-item{font-size:clamp(1.25rem,2.5vw,1.875rem);font-weight:700;padding:1.25rem 1.5rem;border-radius:1rem;border:1px solid var(--border);background:var(--card);text-align:center}
 @media(min-width:768px){.stat-item{text-align:right}}
+
+/* V2 — Performance dashboard / infographic */
+.stats-dashboard{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1rem;align-items:stretch}
+.skills-panel{position:relative;padding:1.75rem;border:1px solid var(--border);border-radius:1.5rem;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));overflow:hidden}
+.skills-panel:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(236,72,153,.06),transparent 70%);pointer-events:none}
+.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:2rem;position:relative}
+.panel-kicker{display:block;color:var(--pink);font-size:.7rem;letter-spacing:.18em;font-weight:700;margin-bottom:.35rem}
+.panel-head h3{font-size:1.45rem;margin:0;font-weight:800}
+.panel-index{font-size:.75rem;color:var(--muted);border:1px solid var(--border);border-radius:999px;padding:.35rem .6rem}
+.skill-list{display:flex;flex-direction:column;gap:1.35rem;position:relative}
+.skill-row{display:flex;flex-direction:column;gap:.6rem}
+.skill-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.95rem;color:var(--muted)}
+.skill-meta strong{color:var(--fg);font-size:.85rem}
+.skill-meta small{font-size:.75em}
+.skill-meter{height:.5rem;background:rgba(255,255,255,.055);border:1px solid var(--border);border-radius:999px;overflow:hidden}
+.skill-meter i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#ec4899,#ff83bc);box-shadow:0 0 16px rgba(236,72,153,.22);transform-origin:right;animation:meterIn 1s cubic-bezier(.16,1,.3,1) both}
+@keyframes meterIn{from{transform:scaleX(0);opacity:.2}to{transform:scaleX(1);opacity:1}}
+.metrics-panel{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.metric-card{position:relative;min-height:150px;padding:1.35rem;border:1px solid var(--border);border-radius:1.35rem;background:var(--card);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:transform .35s ease,border-color .35s ease,background .35s ease}
+.metric-card:after{content:"";position:absolute;inset:auto 0 0;height:2px;background:linear-gradient(90deg,transparent,var(--pink),transparent);opacity:.55}
+.metric-card:hover{transform:translateY(-4px);border-color:rgba(236,72,153,.4);background:rgba(236,72,153,.045)}
+.metric-primary{background:linear-gradient(145deg,rgba(236,72,153,.13),var(--card))}
+.metric-icon{width:38px;height:38px;border:1px solid var(--border);border-radius:.8rem;display:grid;place-items:center;color:var(--pink);font-size:.9rem}
+.metric-copy{display:flex;flex-direction:column;gap:.15rem;margin-top:1.2rem}
+.metric-copy strong{font-size:clamp(1.7rem,3vw,2.5rem);line-height:1;font-weight:800;letter-spacing:-.04em}
+.metric-copy span{color:var(--muted);font-size:.9rem}
+.metric-card em{position:absolute;top:1rem;left:1rem;color:var(--muted);font-size:.65rem;font-style:normal;opacity:.55}
+@media(max-width:767px){.stats-dashboard{grid-template-columns:1fr}.metrics-panel{grid-template-columns:1fr 1fr}.metric-card{min-height:135px}.skills-panel{padding:1.35rem}}
+@media(max-width:480px){.metrics-panel{grid-template-columns:1fr}.metric-card{min-height:125px}}
+@media(prefers-reduced-motion:reduce){.skill-meter i{animation:none}}
+
 /* Works */
 .works-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:42rem;margin:0 auto 5rem;width:100%}
 @media(min-width:640px){.works-grid{grid-template-columns:1fr 1fr}}
@@ -953,54 +984,60 @@ body.light{
           </div>
   </section>
   
-  <!-- Stats -->
+  <!-- Stats / Performance Diagram -->
   <section id="stats-section">
-    <div class="section-eyebrow">02 / الخبرة</div><h2 class="reveal visible">خبرة تُترجم إلى<br><span>نتائج قابلة للقياس.</span></h2>
-    <div class="stats-grid">
-      <div class="skills-card reveal stagger-2 visible" style="order:2">
-        <h3>الأدوات التي أستخدمها</h3>
-                <div class="progress-item">
-          <div class="progress-labels">
-            <span>100%</span>
-            <span>Canva</span>
+    <div class="section-eyebrow">02 / الخبرة</div>
+    <h2 class="reveal visible">خبرة تُترجم إلى<br><span>نتائج قابلة للقياس.</span></h2>
+    <div class="stats-dashboard">
+      <div class="skills-panel reveal stagger-2 visible">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">TOOLS MATRIX</span>
+            <h3>الأدوات التي أستخدمها</h3>
           </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-width="100" style="width: 100%;"></div>
+          <span class="panel-index">04</span>
+        </div>
+        <div class="skill-list">          <div class="skill-row">
+            <div class="skill-meta"><span>Canva</span><strong>100%</strong></div>
+            <div class="skill-meter"><i style="width:100%"></i></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>AI <small>(الذكاء الاصطناعي)</small></span><strong>90%</strong></div>
+            <div class="skill-meter"><i style="width:90%"></i></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>Adobe Illustrator</span><strong>30%</strong></div>
+            <div class="skill-meter"><i style="width:30%"></i></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-meta"><span>Adobe Photoshop</span><strong>25%</strong></div>
+            <div class="skill-meter"><i style="width:25%"></i></div>
           </div>
         </div>
-                <div class="progress-item">
-          <div class="progress-labels">
-            <span>90%</span>
-            <span>AI (الذكاء الاصطناعي)</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-width="90" style="width: 90%;"></div>
-          </div>
+      </div>
+
+      <div class="metrics-panel">
+        <div class="metric-card metric-primary reveal stagger-1 visible">
+          <span class="metric-icon"><i class="fa-solid fa-award"></i></span>
+          <div class="metric-copy"><strong>+9</strong><span>سنوات خبرة</span></div>
+          <em>01</em>
         </div>
-                <div class="progress-item">
-          <div class="progress-labels">
-            <span>30%</span>
-            <span>Adobe Illustrator</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-width="30" style="width: 30%;"></div>
-          </div>
+        <div class="metric-card reveal stagger-2 visible">
+          <span class="metric-icon"><i class="fa-solid fa-layer-group"></i></span>
+          <div class="metric-copy"><strong>+500</strong><span>مشروع مكتمل</span></div>
+          <em>02</em>
         </div>
-                <div class="progress-item">
-          <div class="progress-labels">
-            <span>25%</span>
-            <span>Adobe Photoshop</span>
-          </div>
-          <div class="progress-track">
-            <div class="progress-fill" data-width="25" style="width: 25%;"></div>
-          </div>
+        <div class="metric-card reveal stagger-3 visible">
+          <span class="metric-icon"><i class="fa-solid fa-clock"></i></span>
+          <div class="metric-copy"><strong>98%</strong><span>تسليم بالموعد</span></div>
+          <em>03</em>
         </div>
-              </div>
-      <div class="stat-items" style="order:1">
-                <div class="stat-item reveal stagger-1 visible">+9 سنوات خبرة</div>                <div class="stat-item reveal stagger-2 visible">+500 مشروع</div>
-                <div class="stat-item reveal stagger-3 visible">+ %98 تسليم بالموعد</div>
-                <div class="stat-item reveal stagger-4 visible">+ %95 نسبة رضى العملاء</div>
-              </div>
+        <div class="metric-card reveal stagger-4 visible">
+          <span class="metric-icon"><i class="fa-solid fa-heart"></i></span>
+          <div class="metric-copy"><strong>95%</strong><span>رضى العملاء</span></div>
+          <em>04</em>
+        </div>
+      </div>
     </div>
   </section>
 

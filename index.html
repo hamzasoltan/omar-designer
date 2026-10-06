@@ -1487,7 +1487,7 @@ function esc(str) {
 
 // ─── INFINITE MARQUEE ───
 (function(){
-  function initMarquee(el, dir) {
+  function initMarquee(el, dir, speedFactor) {
     if (!el || !el.children.length) return;
 
     // احفظ الكروت الأصلية
@@ -1504,7 +1504,7 @@ function esc(str) {
     function applySize() {
       var totalSets = COPIES + 1;
       var oneSetW = el.scrollWidth / totalSets;
-      var dur = Math.min(80, Math.max(20, Math.round(oneSetW / 80)));
+      var dur = Math.min(80, Math.max(20, Math.round((oneSetW / 80) * (speedFactor || 1))));
       el.style.setProperty('--set-w', (dir === 'rev' ? '' : '-') + oneSetW + 'px');
       el.style.setProperty('--marquee-dur', dur + 's');
       if (!el.classList.contains('is-fwd') && !el.classList.contains('is-rev')) {
@@ -1523,7 +1523,7 @@ function esc(str) {
   }
 
   function start() {
-    initMarquee(document.getElementById('testimonialsTrack'), 'rev');
+    initMarquee(document.getElementById('testimonialsTrack'), 'rev', 1.35);
     initMarquee(document.getElementById('clientsTrack'),      'rev');
   }
 

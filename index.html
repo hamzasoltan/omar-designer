@@ -104,7 +104,7 @@ main{position:relative;z-index:30;max-width:64rem;margin:0 auto;padding:8rem 1.5
 @media(min-width:768px){.hero{flex-direction:row;justify-content:space-between;gap:4rem}}
 .hero-text{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center}
 @media(min-width:768px){.hero-text{align-items:flex-start;text-align:right}}
-.hero h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem}
+.hero h2{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem}
 .hero p{font-size:1.125rem;line-height:1.75;color:var(--muted);max-width:32rem}
 .hero-img img,.hero-img .hero-img-placeholder{width:13rem;height:13rem;border-radius:9999px;object-fit:cover;box-shadow:0 0 50px rgba(236,72,153,.3);animation:float 6s ease-in-out infinite;transition:box-shadow .4s}
 .hero-img img:hover,.hero-img .hero-img-placeholder:hover{box-shadow:0 0 70px rgba(236,72,153,.45);animation-play-state:paused}
@@ -467,13 +467,13 @@ section h2 span{color:var(--muted);font-weight:400}
   background:#54e38e;
   box-shadow:0 0 14px #54e38e;
 }
-.hero h1{
+.hero h2{
   font-size:clamp(3.25rem,7vw,6.5rem)!important;
   line-height:.92!important;
   letter-spacing:-.075em!important;
   margin-bottom:28px!important;
 }
-.hero h1 em{
+.hero h2 em{
   font-style:normal;
   color:transparent;
   background:linear-gradient(100deg,#fff 0%,#ff79bb 42%,#ff2d8f 100%);
@@ -801,7 +801,7 @@ body.light .project-card{
   background:rgba(255,255,255,.58)!important;
 }
 body.light .site-footer{background:#171515!important}
-body.light .hero h1 em{background:linear-gradient(100deg,#171515 0%,#d72a82 55%,#a8155d 100%);-webkit-background-clip:text;background-clip:text}
+body.light .hero h2 em{background:linear-gradient(100deg,#171515 0%,#d72a82 55%,#a8155d 100%);-webkit-background-clip:text;background-clip:text}
 
 /* ---------- Responsive ---------- */
 @media(max-width:900px){
@@ -818,7 +818,7 @@ body.light .hero h1 em{background:linear-gradient(100deg,#171515 0%,#d72a82 55%,
   .hero-text{order:2!important}
   .hero-img img,.hero-img .hero-img-placeholder,
   .hero-img::before{width:min(72vw,330px)!important;height:min(72vw,330px)!important}
-  .hero h1{font-size:clamp(3.4rem,13vw,6rem)!important}
+  .hero h2{font-size:clamp(3.4rem,13vw,6rem)!important}
   .hero p{max-width:620px!important}
   section h2{text-align:center!important}
   .section-eyebrow{justify-content:center}
@@ -1355,7 +1355,7 @@ body.light{
 .hero-text{
   max-width:620px!important;
 }
-.hero h1{
+.hero h2{
   display:flex!important;
   flex-direction:column!important;
   align-items:flex-start!important;
@@ -1367,12 +1367,12 @@ body.light{
   letter-spacing:-.075em!important;
   margin:0 0 28px!important;
 }
-.hero h1 span,
-.hero h1 em{
+.hero h2 span,
+.hero h2 em{
   display:block!important;
   white-space:nowrap!important;
 }
-.hero h1 em{
+.hero h2 em{
   font-style:normal!important;
   color:transparent!important;
   background:linear-gradient(100deg,#ff9ed0 0%,#ff4ba4 48%,#ff2d8f 100%)!important;
@@ -1422,7 +1422,7 @@ body.light{
   }
 }
 @media(max-width:767px){
-  .hero h1{
+  .hero h2{
     width:100%!important;
     align-items:center!important;
     text-align:center!important;
@@ -1444,7 +1444,7 @@ body.light{
 .hero-text{
   direction:rtl!important;
 }
-.hero h1{
+.hero h2{
   direction:rtl!important;
   unicode-bidi:plaintext!important;
   width:100%!important;
@@ -1460,8 +1460,8 @@ body.light{
   margin:0 0 26px!important;
   overflow:visible!important;
 }
-.hero h1 span,
-.hero h1 em{
+.hero h2 span,
+.hero h2 em{
   width:auto!important;
   max-width:100%!important;
   display:block!important;
@@ -1469,14 +1469,14 @@ body.light{
   direction:rtl!important;
   unicode-bidi:isolate!important;
 }
-.hero h1 em{
+.hero h2 em{
   font-size:1em!important;
 }
 .hero-title-last{
   margin-top:2px!important;
 }
 @media(max-width:767px){
-  .hero h1{
+  .hero h2{
     max-width:100%!important;
     align-items:center!important;
     text-align:center!important;
@@ -1547,12 +1547,12 @@ body.light{
   <div class="hero reveal visible" id="home-section">
     <div class="hero-text" style="order:2">
       <div class="hero-kicker"><span></span> متاح لمشاريع جديدة</div>
-      <h1>
+      <h2>
   <span>أحوّل</span>
   <span>الفكرة</span>
   <em>إلى هوية</em>
   <span class="hero-title-last">تُرى.</span>
-</h1>
+</h2>
       <p>أنا عمر، مصمم محتوى بصري أبني شعارات وهويات وحملات تجعل العلامات أكثر وضوحًا، حضورًا، وقابلية للتذكّر.</p>
       <div class="hero-actions">
         <button class="hero-cta hero-cta-primary" onclick="scrollToSection('work-section')">
